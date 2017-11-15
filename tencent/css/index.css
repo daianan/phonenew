@@ -14,8 +14,8 @@ html body div.bigbox header div.headerMain img { width: 100%; }
 html body div.bigbox header nav { height: 1.9411764706rem; background: #fff; }
 html body div.bigbox header nav ul { height: 100%; float: left; }
 html body div.bigbox header nav ul li { float: left; height: 100%; line-height: 2rem; position: relative; }
-html body div.bigbox header nav ul li a { display: block; color: #666; font-size: 1rem; padding: 0 0.6470588235rem; height: 100%; line-height: 1.9411764706rem; vertical-align: top; }
-html body div.bigbox header nav ul li a.selected { color: #448aff; font-size: 1rem; line-height: 1.9117647059rem; }
+html body div.bigbox header nav ul li a { display: block; color: #666; font-size: 0.9411764706rem; padding: 0 0.6470588235rem; height: 100%; line-height: 1.9411764706rem; vertical-align: top; }
+html body div.bigbox header nav ul li a.selected { color: #448aff; font-size: 1rem; line-height: 1.9117647059rem; margin-top: 0.0588235294rem; }
 html body div.bigbox header nav ul li span { background: #ed5151; display: block; width: 0.3529411765rem; height: 0.3529411765rem; border-radius: 50%; position: absolute; top: 0.3529411765rem; right: 0.1176470588rem; }
 html body div.bigbox header nav a.navMore { display: block; float: right; width: 1.7647058824rem; background: #fff url(../img/addnav1.png) center no-repeat; background-size: contain; height: 1.6470588235rem; margin: 0.2352941176rem 0.1176470588rem 0 0; pointer-events: auto; }
 html body div.bigbox section div.contentImg { position: relative; }
