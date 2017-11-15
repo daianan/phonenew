@@ -1,4 +1,4 @@
-html, html body, html body div.bigbox, body, div, header, section, footer, a, span, ul, li, img, p, b, i, h3 { margin: 0; padding: 0; }
+html, html body, html body div.bigbox, body, div, header, section, footer, a, span, ul, li, img, p, b, i, h3, h2 { margin: 0; padding: 0; }
 
 a { text-decoration: none; -webkit-tap-highlight-color: transparent; }
 
@@ -13,7 +13,7 @@ html body div.bigbox header div.headerMain { height: 2.5882352941rem; }
 html body div.bigbox header div.headerMain img { width: 100%; }
 html body div.bigbox header nav { height: 1.9411764706rem; background: #fff; }
 html body div.bigbox header nav ul { height: 100%; float: left; }
-html body div.bigbox header nav ul li { float: left; height: 100%; line-height: 1.9411764706rem; position: relative; }
+html body div.bigbox header nav ul li { float: left; height: 100%; line-height: 2rem; position: relative; }
 html body div.bigbox header nav ul li a { display: block; color: #666; font-size: 1rem; padding: 0 0.6470588235rem; height: 100%; line-height: 1.9411764706rem; vertical-align: top; }
 html body div.bigbox header nav ul li a.selected { color: #448aff; font-size: 1rem; line-height: 1.9117647059rem; }
 html body div.bigbox header nav ul li span { background: #ed5151; display: block; width: 0.3529411765rem; height: 0.3529411765rem; border-radius: 50%; position: absolute; top: 0.3529411765rem; right: 0.1176470588rem; }
@@ -39,5 +39,24 @@ html body div.bigbox section div.weather div.infoRight { float: right; margin-to
 html body div.bigbox section div.weather div.infoRight a { color: #888; height: 24px; font-size: 13px; margin-left: 3.5294117647rem; }
 html body div.bigbox section div.weather div.infoRight a::before { content: ''; display: inline-block; background: url(../img/10.jpg) no-repeat; width: 0.9411764706rem; height: 1.1764705882rem; background-size: auto 0.9411764706rem; vertical-align: middle; }
 html body div.bigbox section div.weather div.infoRight p { position: absolute; height: 0.8235294118rem; padding: 0 0.4117647059rem 0 0.4117647059rem; font-size: 11px; line-height: 0.8235294118rem; color: #FFFFFF; background: #BFCACE; border-radius: 7px; margin-top: 0.5882352941rem; }
+html body div.bigbox section div.text { width: 100%; height: 2.3529411765rem; background: #fff; padding: 1.5294117647rem 0 0 0.7647058824rem; margin-top: 0.5882352941rem; box-sizing: border-box; }
+html body div.bigbox section div.text h2 { color: #111; font-size: 14px; height: 0.8235294118rem; line-height: 0.8235294118rem; font-weight: bold; padding-left: 8px; border-left: 2px solid #333; }
+html body div.bigbox section div.news { background: #fff; width: 100%; }
+html body div.bigbox section div.news ul { width: 100%; padding: 0.9411764706rem 0.7058823529rem 0.5882352941rem; box-sizing: border-box; }
+html body div.bigbox section div.news ul li { width: 100%; border-bottom: 1px solid #eee; height: 8.1764705882rem; box-sizing: border-box; padding-top: 0.8823529412rem; }
+html body div.bigbox section div.news ul li div.liDiv { width: 100%; padding-left: 0.3529411765rem; box-sizing: border-box; }
+html body div.bigbox section div.news ul li div.liDiv a { display: block; width: 100%; box-sizing: content-box; text-decoration: none; padding: 0.5882352941rem 0.7647058824rem 0.5882352941rem 0.4705882353rem; margin-left: -0.7058823529rem; }
+html body div.bigbox section div.news ul li div.liDiv a div.time { font-size: 11px; color: #448aff; line-height: 0.7058823529rem; margin: 0 0 0.5882352941rem 0; }
+html body div.bigbox section div.news ul li div.liDiv a div.time i { display: inline-block; width: 0.7058823529rem; height: 0.7058823529rem; border-radius: 6px; background-color: #448aff; -ms-transform: scale(1); transform: scale(1); margin-right: 0.4117647059rem; vertical-align: top; }
+html body div.bigbox section div.news ul li div.liDiv a div.time i::after { content: ''; display: block; float: right; width: 0.2352941176rem; height: 0.2352941176rem; border-width: 0 0 1px 1px; border-style: solid; border-color: #FFF; margin: 0.1176470588rem 0.1176470588rem 0 0; }
+html body div.bigbox section div.news ul li div.liDiv a div.main { position: relative; }
+html body div.bigbox section div.news ul li div.liDiv a div.main div.mainImg { width: 6.8235294118rem; float: right; overflow: hidden; margin-right: -0.3529411765rem; pointer-events: none; }
+html body div.bigbox section div.news ul li div.liDiv a div.main div.mainImg img { max-width: 100%; }
+html body div.bigbox section div.news ul li div.liDiv a div.main div.mainTxt { color: #111; font-size: 17px; width: 13.2941176471rem; }
+html body div.bigbox section div.news ul li div.liDiv a div.main div.mainSourse { position: absolute; bottom: -1.7647058824rem; left: 0px; line-height: 0.9411764706rem; color: #888; font-size: 11px; }
+html body div.bigbox section div.news ul li .finna { bottom: -1.7647058824rem !important; }
+html body div.bigbox section div.news ul li.finnaly { border-bottom: 0; }
+html body div.bigbox section div.news ul li.liMore { box-sizing: content-box; height: 3.5294117647rem; text-align: center; padding: 1.7647058824rem 0 0; }
+html body div.bigbox section div.news ul li.liMore a { display: inline-block; height: 28px; line-height: 28px; padding: 0 20px; border: 1px solid #448aff; border-radius: 14px; color: #448aff; font-size: 12px; -webkit-text-decoration: none; text-decoration: none; box-sizing: content-box; -webkit-tap-highlight-color: transparent; }
 
 /*# sourceMappingURL=index.css.map */
