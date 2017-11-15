@@ -1,5 +1,5 @@
 $sc:17;
-html,body,div,header,section,footer,a,span,ul,li,img,p,b{
+html,body,div,header,section,footer,a,span,ul,li,img,p,b,i,h3{
     margin: 0;
     padding: 0;
 }
@@ -74,7 +74,7 @@ html{
                         width: 30/$sc+rem;
                         background: #fff url(../img/addnav1.png) center no-repeat;
                         background-size: contain;
-                        height: 33/$sc+rem;
+                        height: 28/$sc+rem;
                         margin: 4/$sc+rem 2/$sc+rem 0 0;
                         pointer-events: auto;
                     }
@@ -163,7 +163,85 @@ html{
                     }
                 }
                 div.weather{
-                    
+                    height: 83/$sc+rem;
+                    width: 100%;
+                    background: #fff;
+                    margin-top: 8/$sc+rem;
+                    padding: 10/$sc+rem 12/$sc+rem;
+                    box-sizing: border-box;
+                    div.info{
+                        padding: 0 8/$sc+rem;
+                        float: left;
+                        h3{
+                            font-weight: 400;
+                            font-size: 24/$sc+rem;
+                            float: left;
+                        }
+                        i{
+                            display: inline-block;
+                            width: 16/$sc+rem;
+                            height: 16/$sc+rem;
+                            background: url(../img/02.jpg) no-repeat 1px 0px;
+                            background-size: 14/$sc+rem 10/$sc+rem;
+                            float: left;
+                            margin: 12/$sc+rem 3/$sc+rem 0 3/$sc+rem;
+                        }
+                        b{
+                            font-weight: 400;
+                            float: left;
+                            font-size: 13px;
+                            margin: 6/$sc+rem 6/$sc+rem 0 3/$sc+rem;
+                        }
+                        span{
+                            display: inline-block;
+                            float: left;
+                            height: 14/$sc+rem ;
+                            margin: 8/$sc+rem  0 0 0;
+                            padding: 0 7/$sc+rem ;
+                            font-size: 11px;
+                            line-height: 14/$sc+rem ;
+                            color: #FFFFFF;
+                            border-radius: 2px;
+                            background-color: rgb(139, 195, 74);
+                        }
+                        p{
+                            display: inline-block;
+                            margin-left: -82/$sc+rem;
+                            font-size: 13px;
+                            color: #888;
+                            margin-top: 14/$sc+rem;
+                        }
+                    }
+                    div.infoRight{
+                        float: right;
+                        margin-top: 6/$sc+rem;
+                        a{
+                            color: #888;
+                            height: 24px;
+                            font-size: 13px;
+                            margin-left: 60/$sc+rem;
+                        }
+                        a::before{
+                            content: '';
+                            display: inline-block;
+                            background: url(../img/10.jpg) no-repeat;
+                            width: 16/$sc+rem;
+                            height: 20/$sc+rem;
+                            background-size: auto 16/$sc+rem;
+                            vertical-align: middle;
+                        }
+                        p{
+                            position: absolute;
+                            height: 14/$sc+rem;
+                            padding: 0 7/$sc+rem 0 7/$sc+rem;
+                            font-size: 11px;
+                            line-height: 14/$sc+rem;
+                            color: #FFFFFF;
+                            background: #BFCACE;
+                            border-radius: 7px;
+                            margin-top: 10/$sc+rem;
+                        }
+                    }
                 }
             }
         }

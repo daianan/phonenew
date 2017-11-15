@@ -1,4 +1,4 @@
-html, html body, html body div.bigbox, body, div, header, section, footer, a, span, ul, li, img, p, b { margin: 0; padding: 0; }
+html, html body, html body div.bigbox, body, div, header, section, footer, a, span, ul, li, img, p, b, i, h3 { margin: 0; padding: 0; }
 
 a { text-decoration: none; -webkit-tap-highlight-color: transparent; }
 
@@ -17,7 +17,7 @@ html body div.bigbox header nav ul li { float: left; height: 100%; line-height: 
 html body div.bigbox header nav ul li a { display: block; color: #666; font-size: 1rem; padding: 0 0.6470588235rem; height: 100%; line-height: 1.9411764706rem; vertical-align: top; }
 html body div.bigbox header nav ul li a.selected { color: #448aff; font-size: 1rem; line-height: 1.9117647059rem; }
 html body div.bigbox header nav ul li span { background: #ed5151; display: block; width: 0.3529411765rem; height: 0.3529411765rem; border-radius: 50%; position: absolute; top: 0.3529411765rem; right: 0.1176470588rem; }
-html body div.bigbox header nav a.navMore { display: block; float: right; width: 1.7647058824rem; background: #fff url(../img/addnav1.png) center no-repeat; background-size: contain; height: 1.9411764706rem; margin: 0.2352941176rem 0.1176470588rem 0 0; pointer-events: auto; }
+html body div.bigbox header nav a.navMore { display: block; float: right; width: 1.7647058824rem; background: #fff url(../img/addnav1.png) center no-repeat; background-size: contain; height: 1.6470588235rem; margin: 0.2352941176rem 0.1176470588rem 0 0; pointer-events: auto; }
 html body div.bigbox section div.contentImg { position: relative; }
 html body div.bigbox section div.contentImg img { max-width: 100%; }
 html body div.bigbox section div.contentImg p { color: #fff; width: 100%; height: 2.3529411765rem; padding-top: 1.7647058824rem; line-height: 2.3529411765rem; font-size: 15px; text-indent: 0.8em; background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; position: absolute; bottom: 0.2352941176rem; left: 0rem; }
@@ -28,5 +28,16 @@ html body div.bigbox section div.hotNews a div.hotImg img { max-width: 100%; }
 html body div.bigbox section div.hotNews a div.hotTxt { color: #111; line-height: 1.2941176471rem; margin-bottom: 0.8823529412rem; min-height: 2.8823529412rem; overflow: hidden; padding: 0.5882352941rem 0px; font-size: 17px; }
 html body div.bigbox section div.hotNews a div.toTop { font-size: 11px; position: relative; margin: 0; line-height: 0.9411764706rem; color: #888; position: absolute; bottom: -1.2941176471rem; left: 0px; }
 html body div.bigbox section div.hotNews a div.toTop b { font-weight: normal; display: inline-block; position: relative; background-color: #e12222; border-radius: 1px; color: #fff; height: 0.5882352941rem; line-height: 0.5882352941rem; padding: 0.1764705882rem 0.1176470588rem 0.0588235294rem; text-align: center; margin-right: 0.3529411765rem; top: 0.0588235294rem; vertical-align: top; }
+html body div.bigbox section div.weather { height: 4.8823529412rem; width: 100%; background: #fff; margin-top: 0.4705882353rem; padding: 0.5882352941rem 0.7058823529rem; box-sizing: border-box; }
+html body div.bigbox section div.weather div.info { padding: 0 0.4705882353rem; float: left; }
+html body div.bigbox section div.weather div.info h3 { font-weight: 400; font-size: 1.4117647059rem; float: left; }
+html body div.bigbox section div.weather div.info i { display: inline-block; width: 0.9411764706rem; height: 0.9411764706rem; background: url(../img/02.jpg) no-repeat 1px 0px; background-size: 0.8235294118rem 0.5882352941rem; float: left; margin: 0.7058823529rem 0.1764705882rem 0 0.1764705882rem; }
+html body div.bigbox section div.weather div.info b { font-weight: 400; float: left; font-size: 13px; margin: 0.3529411765rem 0.3529411765rem 0 0.1764705882rem; }
+html body div.bigbox section div.weather div.info span { display: inline-block; float: left; height: 0.8235294118rem; margin: 0.4705882353rem 0 0 0; padding: 0 0.4117647059rem; font-size: 11px; line-height: 0.8235294118rem; color: #FFFFFF; border-radius: 2px; background-color: #8bc34a; }
+html body div.bigbox section div.weather div.info p { display: inline-block; margin-left: -4.8235294118rem; font-size: 13px; color: #888; margin-top: 0.8235294118rem; }
+html body div.bigbox section div.weather div.infoRight { float: right; margin-top: 0.3529411765rem; }
+html body div.bigbox section div.weather div.infoRight a { color: #888; height: 24px; font-size: 13px; margin-left: 3.5294117647rem; }
+html body div.bigbox section div.weather div.infoRight a::before { content: ''; display: inline-block; background: url(../img/10.jpg) no-repeat; width: 0.9411764706rem; height: 1.1764705882rem; background-size: auto 0.9411764706rem; vertical-align: middle; }
+html body div.bigbox section div.weather div.infoRight p { position: absolute; height: 0.8235294118rem; padding: 0 0.4117647059rem 0 0.4117647059rem; font-size: 11px; line-height: 0.8235294118rem; color: #FFFFFF; background: #BFCACE; border-radius: 7px; margin-top: 0.5882352941rem; }
 
 /*# sourceMappingURL=index.css.map */
