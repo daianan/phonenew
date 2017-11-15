@@ -1,0 +1,17 @@
+html, html body, body, header, html body footer, section, footer, div, a, ul, li, span, img { margin: 0; padding: 0; }
+
+a { text-decoration: none; }
+
+li { list-style: none; }
+
+img { border: none; outline: none; }
+
+html, html body { height: 100%; width: 100%; }
+html body { display: flex; flex-direction: column; }
+html body header, html body footer { width: 100%; height: 10%; background: #eee; }
+html body section { width: 100%; height: 80%; background: #ccc; overflow: auto; }
+html body section nav ul { display: flex; height: 50px; }
+html body section nav ul li { flex: 1; text-align: center; line-height: 50px; height: 50px; }
+html body section img { width: 100%; }
+
+/*# sourceMappingURL=flex.css.map */

@@ -1,0 +1,211 @@
+$sc:50;
+html,body,footer,section,a,ul,li,span,div{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+html{
+    width: 100%;
+    height: 100%;
+    body{
+        @extend html;
+        header{
+            height: 84/$sc+rem;
+            background: #313131;
+            box-sizing: border-box;
+            position: relative;
+            a.person,a.menu{
+                display: inline-block;
+                height: 60/$sc+rem;
+                position: absolute;
+                top: 12/$sc+rem;
+                img{
+                    width: 57/$sc+rem;
+                    height: 60/$sc+rem;
+                }
+            }
+            a.person{
+                width: 57/$sc+rem;
+                left: 30/$sc+rem;
+            }
+            a.menu{
+                width: 46/$sc+rem;
+                right: 30/$sc+rem;
+                img{
+                    width: 46/$sc+rem;
+                }
+            }
+            ul{
+                position: absolute;
+                top: 12/$sc+rem;
+                left: 110/$sc+rem;
+                li{
+                    float: left;
+                    width: 178/$sc+rem;
+                    height: 60/$sc+rem;
+                    background: #313131;
+                    line-height: 60/$sc+rem;
+                    a{
+                        display: block;
+                        width: 100%;
+                        color: #fff;
+                        font-size: 14px;
+                        height: 100%;
+                        line-height: 60/$sc+rem;
+                        text-align: center;
+                    }
+                    a.selected{
+                        background: #fff;
+                        color: #333;
+                    }
+                }
+            }
+        }
+        section{
+            background: rgba(0,0,0,0.7);
+            div.search{
+                height: 80/$sc+rem;
+                position: relative;
+                a.yuyin{
+                    display: block;
+                    width: 57/$sc+rem;
+                    height: 54/$sc+rem;
+                    position: absolute;
+                    top: 13/$sc+rem;
+                    left: 30/$sc+rem;
+                    img{
+                        width: 57/$sc+rem;
+                        height: 54/$sc+rem;
+                    }
+                }
+                a.refresh{
+                    display: block;
+                    width: 42/$sc+rem;
+                    height: 54/$sc+rem;
+                    position: absolute;
+                    top: 13/$sc+rem;
+                    right: 70/$sc+rem;
+                    img{
+                        width: 42/$sc+rem;
+                        height: 54/$sc+rem;
+                    }
+                }
+                input.inp{
+                    position: absolute;
+                    width: 470/$sc+rem;
+                    height: 50/$sc+rem;
+                    top: 13/$sc+rem;
+                    left: 124/$sc+rem;
+                    border-radius: 10/$sc+rem;
+                    outline: none;
+                    border: none;
+                }
+                span.sea_icon{
+                    display: block;
+                    width: 40/$sc+rem;
+                    height: 40/$sc+rem;
+                    background: url(../img/icon_05.png) no-repeat;
+                    background-size: 40/$sc+rem 40/$sc+rem;
+                    position: absolute;
+                    right: 170/$sc+rem;
+                    top: 16/$sc+rem;
+                    cursor: pointer;
+                }
+            }
+            div.hot_music{
+                width: 690/$sc+rem;
+                height: 276/$sc+rem;
+                background: rgba(255,255,255,0.8);
+                margin-top: 13/$sc+rem;
+                margin-left: 30/$sc+rem;
+                border-radius: 6/$sc+rem;
+                ul{
+                    box-sizing: border-box;
+                    padding: 0 100/$sc+rem;
+                    li{
+                        float: left;
+                        width: 160/$sc+rem;
+                        height: 45/$sc+rem;
+                        margin-right: 5/$sc+rem;
+                        a{
+                            display: block;
+                            height: 45/$sc+rem;
+                            line-height: 45/$sc+rem;;
+                            font-size: 16px;
+                            color: #333;
+                            text-align: center;
+                        }
+                        a.hotSelect{
+                            background: #fff;
+                        }
+                        &:nth-child(3){
+                            margin-right: 0;
+                        }
+                    }
+                }
+                img{
+                    width: 588/$sc+rem;
+                    height: 208/$sc+rem;
+                    border-radius: 5/$sc+rem 5/$sc+rem 0 0;
+                    margin: 10/$sc+rem 0 0 50/$sc+rem;
+                }
+            }
+            div.sing_nav{
+                height: 120/$sc+rem;
+                width: 690/$sc+rem;
+                margin: 15/$sc+rem 30/$sc+rem;
+                ul{
+                    width: 100%;
+                    height: 120/$sc+rem;
+                    li{
+                        width: 170/$sc+rem;
+                        height: 110/$sc+rem;
+                        float: left;
+                        a{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            font-size: 14px;
+                            position: relative;
+                            color: #fff;
+                            img{
+                                display: block;
+                                height: 74/$sc+rem;
+                                position: absolute;
+                                top: 0px;
+                            }
+                            img.nav1{
+                                left: 58/$sc+rem;
+                                width: 58/$sc+rem;
+                            }
+                            img.nav2{
+                                left: 34/$sc+rem;
+                                width: 94/$sc+rem;
+                            }
+                            img.nav3{
+                                left: 46/$sc+rem;
+                                width: 74/$sc+rem;
+                            }
+                            img.nav4{
+                                left: 38/$sc+rem;
+                                width: 92/$sc+rem;
+                            }
+                            span{
+                                display: block;
+                                width: 100%;
+                                text-align: center;
+                                position: absolute;
+                                bottom: 2/$sc+rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

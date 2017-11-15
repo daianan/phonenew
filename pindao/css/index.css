@@ -1,0 +1,24 @@
+html, html body, body, header, section, footer, span, nav, a, ul, li, img, div { margin: 0; padding: 0; }
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+img { border: none; outline: none; display: block; }
+
+html, html body { height: 100%; width: 100%; }
+html body header { height: 2.2rem; background: #148ad2; position: relative; }
+html body header a { display: inline-block; width: 1rem; height: 0.8rem; position: absolute; top: 0.7rem; }
+html body header a:nth-child(1) { background: url(../img/pin_01.png) no-repeat 0px 0px; left: 0.6rem; }
+html body header a:nth-child(2) { background: url(../img/pin_02.png) no-repeat 10px 0px; left: 6.96rem; }
+html body header a:nth-child(3) { background: url(../img/pin_03.png) no-repeat 15px 0px; right: 0.6rem; }
+html body section nav { height: 3.6rem; line-height: 3.6rem; background: #1183c9; box-sizing: border-box; padding: 0 0.6rem; }
+html body section nav li { width: 4rem; float: left; text-align: center; height: 100%; margin: 0 0.44rem; }
+html body section nav li:nth-child(1) { margin-left: 0px; }
+html body section nav li:nth-child(3) { margin-right: 0px; }
+html body section nav li a { width: 100%; display: inline-block; height: 1.36rem; line-height: 1.36rem; font-size: 40px; color: #fafafa; text-align: center; }
+html body section nav li a.selected { border: 1px solid #eee; border-radius: 0.7rem; }
+html body section div.imgs a { float: left; }
+html body section div.imgs a img { width: 7.49rem; height: 6.9rem; }
+
+/*# sourceMappingURL=index.css.map */

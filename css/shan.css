@@ -1,0 +1,8 @@
+html, html body { height: 100%; width: 100%; }
+html body { background: #f0f0f0; }
+html body img { border: none; outline: none; }
+html body img:nth-child(1) { width: 26.8333333333rem; height: 26.5rem; margin-top: 27.9166666667rem; margin-left: 17.9166666667rem; }
+html body img:nth-child(2) { width: 26.8333333333rem; height: 6.6666666667rem; margin-left: 17.9166666667rem; margin-top: 1.6666666667rem; }
+html body img:nth-child(3) { width: 32.1666666667rem; height: 5.5833333333rem; margin-top: 8.3333333333rem; margin-left: 14.5833333333rem; }
+
+/*# sourceMappingURL=shan.css.map */

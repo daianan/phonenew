@@ -1,0 +1,31 @@
+$sc:12;
+html{
+    height: 100%;
+    width: 100%;
+    body{
+        @extend html;
+        background: #f0f0f0;
+        img{
+            border: none;
+            outline: none;
+            &:nth-child(1){
+                width: 322/$sc+rem;
+                height: 318/$sc+rem;
+                margin-top: 335/$sc+rem;
+                margin-left: 215/$sc+rem;
+            }
+            &:nth-child(2){
+                width: 322/$sc+rem;
+                height: 80/$sc+rem;
+                margin-left: 215/$sc+rem;
+                margin-top: 20/$sc+rem;
+            }
+            &:nth-child(3){
+                width: 386/$sc+rem;
+                height: 67/$sc+rem;
+                margin-top: 100/$sc+rem;
+                margin-left: 175/$sc+rem;
+            }
+        }
+    }
+}

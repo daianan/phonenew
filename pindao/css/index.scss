@@ -1,0 +1,91 @@
+$sc:50;
+html,body,header,section,footer,span,nav,a,ul,li,img,div{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+    outline: none;
+    display: block;
+}
+html{
+    height: 100%;
+    width: 100%;
+    body{
+        @extend html;
+        header{
+            height: 110/$sc+rem;
+            background: #148ad2;
+            position: relative;
+            a{
+                display: inline-block;
+                width: 50/$sc+rem;
+                height: 40/$sc+rem;
+                position: absolute;
+                top: 35/$sc+rem;
+                &:nth-child(1){
+                    background: url(../img/pin_01.png) no-repeat 0px 0px;
+                    left: 30/$sc+rem;
+                }
+                &:nth-child(2){
+                    background: url(../img/pin_02.png) no-repeat 10px 0px;
+                    left: 348/$sc+rem;
+                }
+                &:nth-child(3){
+                    background: url(../img/pin_03.png) no-repeat 15px 0px;
+                    right: 30/$sc+rem;
+                }
+            }
+        }
+        section{
+            nav{
+                height: 180/$sc+rem;
+                line-height: 180/$sc+rem;
+                background: #1183c9;
+                box-sizing: border-box;
+                padding: 0 30/$sc+rem;
+                li{
+                    width: 200/$sc+rem;
+                    float: left;
+                    text-align: center;
+                    height: 100%;
+                    margin: 0 22/$sc+rem;
+                    &:nth-child(1){
+                        margin-left: 0px;
+                    }
+                    &:nth-child(3){
+                        margin-right: 0px;
+                    }
+                    a{
+                        width: 100%;
+                        display: inline-block;
+                        height: 68/$sc+rem;
+                        line-height: 68/$sc+rem;
+                        font-size: 40px;
+                        color: #fafafa;
+                        text-align: center;
+                    }
+                    a.selected{
+                        border: 1px solid #eee;
+                        border-radius: 35/$sc+rem;
+                    }
+                }
+            }
+            div.imgs{
+                a{
+                    float: left;
+                    img{
+                        width: 374.5/$sc+rem;
+                        height: 345/$sc+rem;
+                    }
+                }
+            }
+        }
+    }
+}
