@@ -1,4 +1,171 @@
+$sc:17;
+html,body,div,header,section,footer,a,span,ul,li,img,p,b{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+img{
+    border: none;
+    outline: none;
+}
+li{
+    list-style: none;
+}
 html{
     width: 100%;
     height: 100%;
+    body{
+        @extend html;
+        background-color: #f5f5f5;
+        div.bigbox{
+            @extend html;
+            header{
+                width: 100%;
+                height: 82/$sc+rem;
+                div.headerMain{
+                    height: 44/$sc+rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+                nav{
+                    height: 33/$sc+rem;
+                    background: #fff;
+                    ul{
+                        height: 100%;
+                        float: left;
+                        li{
+                            float: left;
+                            height: 100%;
+                            line-height: 33/$sc+rem;
+                            position: relative;
+                            a{
+                                display: block;
+                                color: #666;
+                                font-size: 17/$sc+rem;
+                                padding: 0 11/$sc+rem;
+                                height: 100%;
+                                line-height: 33/$sc+rem;
+                                vertical-align: top;
+                            }
+                            a.selected{
+                                color: #448aff;
+                                font-size: 17/$sc+rem;
+                                line-height: 32.5/$sc+rem;
+                            }
+                            span{
+                                background: #ed5151;
+                                display: block;
+                                width: 6/$sc+rem;
+                                height: 6/$sc+rem;
+                                border-radius: 50%;
+                                position: absolute;
+                                top: 6/$sc+rem;
+                                right: 2/$sc+rem;
+                            }
+                        }
+                    }
+                    a.navMore{
+                        display: block;
+                        float: right;
+                        width: 30/$sc+rem;
+                        background: #fff url(../img/addnav1.png) center no-repeat;
+                        background-size: contain;
+                        height: 33/$sc+rem;
+                        margin: 4/$sc+rem 2/$sc+rem 0 0;
+                        pointer-events: auto;
+                    }
+                }
+            }
+            section{
+                div.contentImg{
+                    position: relative;
+                    img{
+                        max-width: 100%;
+                    }
+                    p{
+                        color: #fff;
+                        width: 100%;
+                        height: 40/$sc+rem;
+                        padding-top: 30/$sc+rem;
+                        line-height: 40/$sc+rem;
+                        font-size: 15px;
+                        text-indent: 0.8em;
+                        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%);
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        position: absolute;
+                        bottom: 4/$sc+rem;
+                        left: 0/$sc+rem;
+                    }
+                }
+                div.hotNews{
+                    padding: 0 12/$sc+rem;
+                    border-top: 1px solid #eee;
+                    border-bottom: 1px solid #eee;
+                    height: 108/$sc+rem;
+                    margin-top: 5/$sc+rem;
+                    background: #fff;
+                    a{
+                        display: block;
+                        width: 100%;
+                        position: relative;
+                        div.hotImg{
+                            width: 33%;
+                            float: right;
+                            position: relative;
+                            overflow: hidden;
+                            margin-left: 15/$sc+rem;
+                            pointer-events: none;
+                            padding-top: 10/$sc+rem;
+                            img{
+                                max-width: 100%;
+                            }
+                        }
+                        div.hotTxt{
+                            color: #111;
+                            line-height: 22/$sc+rem;
+                            margin-bottom: 15/$sc+rem;
+                            min-height: 49/$sc+rem;
+                            overflow: hidden;
+                            padding: 10/$sc+rem 0px;
+                            font-size: 17px;
+                        }
+                        div.toTop{
+                            font-size: 11px;
+                            position: relative;
+                            margin: 0;
+                            line-height: 16/$sc+rem;
+                            color: #888;
+                            position: absolute;
+                            bottom: -22/$sc+rem;
+                            left: 0px;
+                            b{
+                                font-weight: normal;
+                                display: inline-block;
+                                position: relative;
+                                background-color: rgb(225, 34, 34);
+                                border-radius: 1px;
+                                color: #fff;
+                                height: 10/$sc+rem;
+                                line-height: 10/$sc+rem;
+                                padding: 3/$sc+rem 2/$sc+rem 1/$sc+rem;
+                                text-align: center;
+                                margin-right: 6/$sc+rem;
+                                top: 1/$sc+rem;
+                                vertical-align: top;
+                            }
+                        }
+                    }
+                }
+                div.weather{
+                    
+                }
+            }
+        }
+    }
 }
