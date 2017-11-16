@@ -26,8 +26,8 @@
 			var tarE = e.changedTouches[0].pageX;
 			bigbox.addEventListener("touchmove", function(e) {
 				var lengthE = e.changedTouches[0].pageX - tarE;
-				var sum = Math.round(bigbox.offsetLeft / fWidth);
 				bigbox.style.left = (postLeft + lengthE) + "px";
+				var sum = Math.round(bigbox.offsetLeft / fWidth);
 				bigbox.addEventListener("touchend", function() {
 					if(sum <= -(divs.length - 1)) {
 						sum = -(divs - length - 1);
