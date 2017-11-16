@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+		<link rel="stylesheet" href="css/qiehuan.css" />
+	</head>
+
+	<body>
+		<div class="bigbox" id="bigbox">
+			<div>1111</div>
+			<div>2222</div>
+			<div>3333</div>
+			<div>4444</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var bigbox = document.getElementById("bigbox");
+		var divs = document.getElementsByTagName("div");
+		var fWidth = innerWidth;
+		bigbox.addEventListener("touchstart", function(e) {
+			e.preventDefault();
+			var postLeft = this.offsetLeft;
+			var tarE = e.changedTouches[0].pageX;
+			bigbox.addEventListener("touchmove", function(e) {
+				var lengthE = e.changedTouches[0].pageX - tarE;
+				var sum = Math.round(bigbox.offsetLeft / fWidth);
+				bigbox.style.left = (postLeft + lengthE) + "px";
+				bigbox.addEventListener("touchend", function() {
+					if(sum <= -(divs.length - 1)) {
+						sum = -(divs - length - 1);
+					}
+					if(sum > 0) {
+						sum = 0;
+					}
+					bigbox.style.left = sum * fWidth + "px";
+				});
+			});
+		});
+	</script>
+
+</html>

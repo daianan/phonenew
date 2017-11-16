@@ -16,5 +16,13 @@
 			e.preventDefault();
 			box.innerHTML=e.touches.length;
 		});
+		box.addEventListener("touchmove",function(e){
+			e.preventDefault();
+			box.innerHTML=e.touches.length;
+		});
+		box.addEventListener("touchend",function(e){
+			e.preventDefault();
+			box.innerHTML=e.changeTouches.length;
+		});
 	</script>
 </html>
