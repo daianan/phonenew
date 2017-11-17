@@ -20,23 +20,24 @@
 	</body>
 	<script type="text/javascript">
 		var n=0;
-		$("#bigbox").addEventListener("touchstart",function(e){
+		var bigbox=document.getElementById("bigbox");
+		bigbox.addEventListener("touchstart",function(e){
 			e.preventDefault();
 		});
-			$("#bigbox").on("swipeLeft",function(){
-				n++;
-				if (n==$("#bigbox div").length) {
-					n=$("#bigbox div").length-1;
-				}
-				$("#bigbox").css("transform","translate3d(-"+n*25+"%,0,0)");
-			});
-			$("#bigbox").on("swipeRight",function(){
-				n--;
-				if (n<0) {
-					n=0;
-				}
-				$("#bigbox").css("transform","translate3d(-"+n*25+"%,0,0)");
-			});
+		$("#bigbox").on("swipeLeft",function(){
+			n++;
+			if (n==$("#bigbox div").length) {
+				n=$("#bigbox div").length-1;
+			}
+			$("#bigbox").css("transform","translate3d(-"+n*25+"%,0,0)");
+		});
+		$("#bigbox").on("swipeRight",function(){
+			n--;
+			if (n<0) {
+				n=0;
+			}
+			$("#bigbox").css("transform","translate3d(-"+n*25+"%,0,0)");
+		});
 		
 	</script>
 
