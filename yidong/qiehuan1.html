@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+		<link rel="stylesheet" href="css/qiehuan.css" />
+		<script src="../js/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/touch.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="bigbox" id="bigbox">
+			<div>1111</div>
+			<div>2222</div>
+			<div>3333</div>
+			<div>4444</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var n=0;
+		$("#bigbox").on("swipeLeft",function(){
+			n++;
+			if (n==$("#bigbox div").length) {
+				n=$("#bigbox div").length-1;
+			}
+			$("#bigbox").css("transform","translate3d(-"+n*innerWidth+"px,0,0)");
+		});
+		$("#bigbox").on("swipeRight",function(){
+			n--;
+			if (n<0) {
+				n=0;
+			}
+			$("#bigbox").css("transform","translate3d(-"+n*innerWidth+"px,0,0)");
+		});
+	</script>
+
+</html>
