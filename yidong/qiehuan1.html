@@ -27,14 +27,14 @@
 				if (n==$("#bigbox div").length) {
 					n=$("#bigbox div").length-1;
 				}
-				$("#bigbox").css("transform","translate3d(-"+n*innerWidth+"px,0,0)");
+				$("#bigbox").css("transform","translate3d(-"+n*25+"%,0,0)");
 			});
 			$("#bigbox").on("swipeRight",function(){
 				n--;
 				if (n<0) {
 					n=0;
 				}
-				$("#bigbox").css("transform","translate3d(-"+n*innerWidth+"px,0,0)");
+				$("#bigbox").css("transform","translate3d(-"+n*25+"%,0,0)");
 			});
 		});
 		
