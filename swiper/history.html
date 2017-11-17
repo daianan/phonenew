@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/swiper4.css" />
+		<style type="text/css">
+			html,
+			body {
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				margin: 0;
+				width: 100%;
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" data-history="slide1">Slide 1</div>
+				<div class="swiper-slide" data-history="slide2">Slide 2</div>
+				<div class="swiper-slide" data-history="slide3">Slide 3</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/swiper.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var swiper = new Swiper('.swiper-container', {
+			history: true,
+		});
+	</script>
+</html>
