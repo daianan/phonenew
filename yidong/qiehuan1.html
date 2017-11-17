@@ -15,7 +15,7 @@
 			<div>1111</div>
 			<div>2222</div>
 			<div>3333</div>
-			<div>4444</div>
+			<div><button id="btn">百度</button>4444</div>
 		</div>
 	</body>
 	<script type="text/javascript">
@@ -23,7 +23,7 @@
 		var bigbox=document.getElementById("bigbox");
 		bigbox.addEventListener("touchstart",function(e){
 			e.preventDefault();
-		});
+		});//阻止默认行为
 		$("#bigbox").on("swipeLeft",function(){
 			n++;
 			if (n==$("#bigbox div").length) {
@@ -37,6 +37,9 @@
 				n=0;
 			}
 			$("#bigbox").css("transform","translate3d(-"+n*25+"%,0,0)");
+		});
+		$("#btn").on("tap",function(){
+			location.href="http://baidu.com";
 		});
 		
 	</script>
