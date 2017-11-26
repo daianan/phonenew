@@ -1,0 +1,171 @@
+$sc:25;
+div,
+body,
+header,
+section,
+footer,
+span,
+a,
+ul,
+li,
+p,
+i,
+b {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+
+li {
+    list-style: none;
+    float: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    body {
+        @extend html;
+        header {
+            box-sizing: border-box;
+            width: 100%;
+            position: fixed;
+            height: 30/$sc+rem;
+            padding: 2/$sc+rem 10/$sc+rem;
+            background: #fafafa;
+            top: 0;
+            left: 0;
+            a {
+                display: inline-block;
+                float: left;
+                height: 100%;
+                width: 27%;
+                color: #333;
+                font-weight: 600;
+                font-size: 16px;
+            }
+            span {
+                float: left;
+                display: inline-block;
+                height: 27/$sc+rem;
+                width: 30/$sc+rem;
+            }
+            span.search {
+                background: url(../img/timg02.png) no-repeat 2px -3px;
+                background-size: 30/$sc+rem 30/$sc+rem;
+                margin-left: 4/$sc+rem;
+            }
+            span.edit {
+                background: url(../img/timg01.png) no-repeat 0px -3px;
+                background-size: 30/$sc+rem 30/$sc+rem;
+            }
+        }
+        section {
+            width: 100%;
+            height: 500/$sc+rem;
+            padding-top: 30/$sc+rem;
+            box-sizing: border-box;
+            ul.tieList{
+                width: 100%;
+                height: 100%;
+                li{
+                    width: 100%;
+                    height: auto;
+                    padding: 4/$sc+rem 8/$sc+rem;
+                    box-sizing: border-box;
+                    div.tieListTop{
+                        height: 24/$sc+rem;
+                        width: 100%;
+                        font-size: 14px;
+                        span.touXiang{
+                            display: inline-block;
+                            width: 24/$sc+rem;
+                            height: 24/$sc+rem;
+                            border: 1px solid #ccc;
+                            border-radius: 50%;
+                            float: left;
+                            margin-left: 8/$sc+rem;
+                        }
+                        p.nick{
+                            display: inline-block;
+                            min-width: 30/$sc+rem;
+                            height: 100%;
+                            line-height: 24/$sc+rem;
+                            float: left;
+                            margin-left: 8/$sc+rem;
+                        }
+                        b.close{
+                            font-weight: normal;
+                            float: right;
+                            margin-right: 10/$sc+rem;
+                            font-size: 16px;
+                            line-height: 24/$sc+rem;
+                        }
+                    }
+                    p.tieListMsg{
+                        min-height: 24/$sc+rem;
+                        font-size: 16px;
+                        text-align: left;
+                        white-space: pre-wrap;
+                        padding: 0 4/$sc+rem;
+                    }
+                    div.tieListMain{
+                        min-height: 40/$sc+rem;
+                    }
+                    div.caoZuo{
+                        height: 26/$sc+rem;
+                        width: 100%;
+                        span{
+                            display: inline-block;
+                            width: 60/$sc+rem;
+                            height: 100%;
+                            line-height: 26/$sc+rem;
+                            font-size: 14px;
+                            float: left;
+                        }
+                        span.zan{
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            width: 100%;
+            position: fixed;
+            height: 50/$sc+rem;
+            bottom: 0;
+            left: 0;
+            ul.footerNav {
+                width: 100%;
+                height: 100%;
+                font-size: 14px;
+                li {
+                    width: 20%;
+                    background: #f8f8f8;
+                    span {
+                        display: inline-block;
+                        width: 100%;
+                        height: 26/$sc+rem;
+                        img {
+                            width: 26/$sc+rem;
+                            height: 26/$sc+rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

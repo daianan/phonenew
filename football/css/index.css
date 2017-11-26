@@ -1,0 +1,41 @@
+body, div, ul, li, span, a, p, img, section, header, footer, b { margin: 0; padding: 0; }
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+img { display: block; }
+
+html, html body div.main { width: 100%; height: 100%; }
+html body, html body div.main body { height: 100%; }
+html body div.main header { width: 100%; height: 2.8rem; background: #0dc441; position: fixed; top: 0; left: 0; }
+html body div.main header ul li { float: left; }
+html body div.main header ul li:nth-child(1) { width: 2.8rem; height: 2.8rem; padding: 0.72rem; box-sizing: border-box; cursor: pointer; }
+html body div.main header ul li:nth-child(1) span { display: inline-block; width: 1.2rem; height: 0.12rem; background: rgba(255, 255, 255, 0.5); float: left; margin-top: 0.28rem; }
+html body div.main header ul li:nth-child(2) { height: 100%; margin-left: 3.6rem; }
+html body div.main header ul li:nth-child(2) span { display: inline-block; width: 3.68rem; height: 1.6rem; font-size: 12px; line-height: 1.6rem; text-align: center; float: left; margin-top: 0.56rem; }
+html body div.main header ul li:nth-child(2) span:nth-child(1) { border-radius: 0.56rem 0 0 0.56rem; }
+html body div.main header ul li:nth-child(2) span:nth-child(2) { border-radius: 0 0.56rem 0.56rem 0; color: rgba(255, 255, 255, 0.5); background: rgba(10, 217, 133, 0.5); }
+html body div.main header ul li:nth-child(2) span.selected { color: #fff; background: #0ad985; }
+html body div.main header ul li:nth-child(3) { height: 1.84rem; width: 1.84rem; float: right; margin-top: 0.48rem; margin-right: 0.48rem; background: url(../img/icon01.jpg) no-repeat; }
+html body div.main nav { height: 2.2rem; width: 100%; color: #212121; position: fixed; top: 2.8rem; left: 0; z-index: 3; background: #fff; }
+html body div.main nav ul { display: flex; height: 100%; }
+html body div.main nav ul li { flex: 1; text-align: center; height: 100%; line-height: 2.2rem; border-bottom: 0.5px solid #ced6cf; font-size: 14px; cursor: pointer; }
+html body div.main nav ul li.active { border-bottom: 2px solid #0DC441; color: #0DC441; }
+html body div.main footer { height: 2.8rem; width: 100%; position: fixed; bottom: 0; background: #fff; }
+html body div.main footer ul { height: 100%; display: flex; border-top: 0.5px solid #ced6cf; }
+html body div.main footer ul li { flex: 1; flex-direction: column; align-items: center; justify-content: center; color: #d6d6d6; font-size: 14px; display: flex; position: relative; }
+html body div.main footer ul li span { display: inline-block; height: 1.6rem; width: 1.6rem; }
+html body div.main footer ul li b { font-size: 12px; height: 0.8rem; line-height: 0.8rem; }
+html body div.main footer ul li b.clickSty { color: #0DC441; font-weight: normal; }
+html body div.main footer ul li:nth-of-type(1) span { background: url(../img/icon02.jpg) no-repeat 0px 0px; }
+html body div.main footer ul li:nth-of-type(2) span { background: url(../img/icon03.jpg) no-repeat -2px 0px; }
+html body div.main footer ul li:nth-of-type(4) span { background: url(../img/icon04.jpg) no-repeat -3px 0px; }
+html body div.main footer ul li:nth-of-type(5) span { background: url(../img/icon05.jpg) no-repeat -5px 0px; }
+html body div.main footer ul li:nth-of-type(3) span { height: 3rem; width: 3rem; position: absolute; bottom: 0; left: 0; border-radius: 50%; border: 1px solid #ccc; margin-left: 0.44rem; background: url(../img/icon06.jpg) no-repeat 6px 6px; background-color: #fff; z-index: 2; }
+html body div.main section { overflow: auto; background: #fff; padding-bottom: 0.28rem; box-sizing: border-box; margin-top: 5.2rem; }
+html body div.main section ul { display: flex; flex-wrap: wrap; align-content: flex-start; display: none; }
+html body div.main section ul li { width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 0.28rem; padding: 0 0.28rem; box-sizing: border-box; font-size: 14px; }
+html body div.main section ul li img { width: 100%; }
+
+/*# sourceMappingURL=index.css.map */
