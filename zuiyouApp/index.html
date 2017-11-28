@@ -6,8 +6,12 @@
 		<title>最右</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/public.css" />
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/zepto.js" ></script>
+		<script type="text/javascript" src="js/touch.js" ></script>
+		<script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript" src="js/index.js" ></script>
 		<script type="text/javascript">
 			document.documentElement.style.fontSize=innerWidth/15+"px";
 		</script>
@@ -15,13 +19,13 @@
 
 	<body>
 		<header>
-			<span class="search"></span>
-			<a href="#">推荐</a>
+			<span class="search" id="search"></span>
+			<a href="#" class="headerSel">推荐</a>
 			<a href="#">视频</a>
 			<a href="#">图文</a>
 			<span class="edit"></span>
 		</header>
-		<section>
+		<section class="indexSection">
 			<ul class="tieList">
 				<li>
 					<div class="tieListTop">
@@ -30,11 +34,13 @@
 						<b class="close">X</b>
 					</div>
 					<p class="tieListMsg">气完额外任务塔尔特通过热管对方房网的发热管放松的方式</p>
-					<div class="tieListMain"></div>
+					<div class="tieListMain">
+						<img src="img/shipin1.jpg" />
+					</div>
 					<div class="caoZuo">
-						<span>转发(<b>0</b>)</span>
-						<span>评论(<b>0</b>)</span>
-						<span class="zan">赞(<b>0</b>)</span>
+						<span><i></i><b>0</b></span>
+						<span><i></i><b>0</b></span>
+						<span class="zan"><i></i><b>0</b></span>
 					</div>
 				</li>
 				<li>
@@ -44,22 +50,90 @@
 						<b class="close">X</b>
 					</div>
 					<p class="tieListMsg">气完额外任务塔尔特通过热管对方房网的发热管放松的方式</p>
-					<div class="tieListMain"></div>
+					<div class="tieListMain">
+						<img src="img/shipin2.jpg" />
+					</div>
 					<div class="caoZuo">
-						<span>转发(<b>0</b>)</span>
-						<span>评论(<b>0</b>)</span>
-						<span class="zan">赞(<b>0</b>)</span>
+						<span><i></i><b>0</b></span>
+						<span><i></i><b>0</b></span>
+						<span class="zan"><i></i><b>0</b></span>
+					</div>
+				</li>
+				<li>
+					<div class="tieListTop">
+						<span class="touXiang"></span>
+						<p class="nick">益达</p>
+						<b class="close">X</b>
+					</div>
+					<p class="tieListMsg">气完额外任务塔尔特通过热管对方房网的发热管放松的方式</p>
+					<div class="tieListMain">
+						<img src="img/shipin3.jpg" />
+					</div>
+					<div class="caoZuo">
+						<span><i></i><b>0</b></span>
+						<span><i></i><b>0</b></span>
+						<span class="zan"><i></i><b>0</b></span>
+					</div>
+				</li>
+				<li>
+					<div class="tieListTop">
+						<span class="touXiang"></span>
+						<p class="nick">益达</p>
+						<b class="close">X</b>
+					</div>
+					<p class="tieListMsg">气完额外任务塔尔特通过热管对方房网的发热管放松的方式</p>
+					<div class="tieListMain">
+						<img src="img/shipin4.jpg" />
+					</div>
+					<div class="caoZuo">
+						<span><i></i><b>0</b></span>
+						<span><i></i><b>0</b></span>
+						<span class="zan"><i></i><b>0</b></span>
+					</div>
+				</li>
+			</ul>
+			<ul class="tieList tieList1">
+				<li>
+					<div class="tieListTop">
+						<span class="touXiang"></span>
+						<p class="nick">益达</p>
+						<b class="close">X</b>
+					</div>
+					<p class="tieListMsg">气完额外任务塔尔特通过热管对方房网的发热管放松的方式</p>
+					<div class="tieListMain">
+						
+					</div>
+					<div class="caoZuo">
+						<span><i></i><b>0</b></span>
+						<span><i></i><b>0</b></span>
+						<span class="zan"><i></i><b>0</b></span>
+					</div>
+				</li>
+				<li>
+					<div class="tieListTop">
+						<span class="touXiang"></span>
+						<p class="nick">益达</p>
+						<b class="close">X</b>
+					</div>
+					<p class="tieListMsg">气完额外任务塔尔特通过热管对方房网的发热管放松的方式</p>
+					<div class="tieListMain">
+						
+					</div>
+					<div class="caoZuo">
+						<span><i></i><b>0</b></span>
+						<span><i></i><b>0</b></span>
+						<span class="zan"><i></i><b>0</b></span>
 					</div>
 				</li>
 			</ul>
 		</section>
 		<footer>
-			<ul class="footerNav">
-				<li><span><img src="img/timg07.png" /></span>最右</li>
-				<li><span><img src="img/timg03.png" /></span>跟拍</li>
-				<li><span><img src="img/timg06.png" /></span>话题</li>
-				<li><span><img src="img/timg05.png" /></span>消息</li>
-				<li><span><img src="img/timg04.png" /></span>我的</li>
+			<ul class="footerNav" id="footerNav">
+				<li><a href="index.html"><span><img src="img/icon16_03.png" /></span>最右</a></li>
+				<li><a href="genpai.html"><span><img src="img/icon11_03.png" /></span>跟拍</a></li>
+				<li><a href="javascript:"><span><img src="img/icon20_03.png" /></span>话题</a></li>
+				<li><a href="javascript:"><span><img src="img/icon24_03.png" /></span>消息</a></li>
+				<li><a href="javascript:"><span><img src="img/icon22_03.png" /></span>我的</a></li>
 			</ul>
 		</footer>
 	</body>
