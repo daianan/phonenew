@@ -13,15 +13,10 @@
 	</head>
 	<body>
 		<header>
-			<input type="text" placeholder="搜索话题" class="searchTxt" />
+			<input type="text" placeholder="搜索话题" class="searchTxt" id="searchTxt" />
 			<i class="searchLogo"></i>
 			<span class="searchClose" id="searchClose">×</span>
 		</header>
-		<script type="text/javascript">
-			$("#searchClose").on("tap",function(){
-				history.back();
-			});
-		</script>
 		<section class="searchMain">
 			<nav id="searchNav">
 				<a href="javascript:">话题</a>
