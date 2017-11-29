@@ -1,7 +1,84 @@
-html{
+$sc:25;
+html {
     height: 100%;
     width: 100%;
-    body{
+    body {
         @extend html;
+        position: relative;
+        header {
+            padding: 4/$sc+rem 20/$sc+rem;
+            box-sizing: border-box;
+            position: relative;
+            input.searchTxt {
+                width: 430/$sc+rem;
+                height: 100%;
+                outline: none;
+                border: 1px solid #fff;
+                background: #eee;
+                border-radius: 21/$sc+rem;
+                padding: 2/$sc+rem 4/$sc+rem 2/$sc+rem 54/$sc+rem;
+                float: left;
+            }
+            i.searchLogo {
+                display: block;
+                width: 30/$sc+rem;
+                height: 30/$sc+rem;
+                position: absolute;
+                top: 6px;
+                left: 24px;
+                z-index: 4;
+                background: url(../img/icon27_03.png) no-repeat 0px 0px;
+                background-size: 30/$sc+rem 30/$sc+rem;
+            }
+            span.searchClose {
+                float: right;
+                background: #eee;
+                display: block;
+                width: 30/$sc+rem;
+                height: 30/$sc+rem;
+                line-height: 30/$sc+rem;
+                border-radius: 50%;
+                font-size: 20px;
+                color: #888;
+            }
+        }
+        section.searchMain {
+            margin-top: -5/$sc+rem;
+            padding-top: 30/$sc+rem;
+            padding-bottom: 0;
+            background: #fff;
+            nav {
+                width: 100%;
+                position: relative;
+                a {
+                    display: block;
+                    float: left;
+                    width: 33.33%;
+                    color: #000;
+                    font-size: 16px;
+                    background: #fff;
+                    font-weight: bold;
+                    padding-bottom: 14/$sc+rem;
+                }
+                span {
+                    width: 14/$sc+rem;
+                    height: 4/$sc+rem;
+                    display: inline-block;
+                    background: #149eff;
+                    position: absolute;
+                    top: 42/$sc+rem;
+                    left: 0;
+                    border-radius: 2/$sc+rem;
+                }
+            }
+        }
+        p {
+            background: #fafafa;
+            font-size: 12px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -8px 0 0 -24px;
+        }
     }
 }
