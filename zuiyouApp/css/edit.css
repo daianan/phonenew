@@ -1,9 +1,14 @@
 html, html body { height: 100%; width: 100%; }
+html body { background: #fff; }
 html body header { padding: 0.24rem 0.8rem; box-sizing: border-box; }
 html body header span { display: block; height: 100%; margin: 0; }
 html body header span.editClose { float: left; font-size: 20px; color: #888; }
 html body header span.addItem { float: right; width: 2rem; color: #149eff; font-weight: bold; }
 html body section { width: 100%; }
 html body section textarea { overflow-x: hidden; width: 100%; height: auto; padding: 0.8rem; border: none; box-sizing: border-box; outline: none; resize: none; }
+html body section div.linkNav { width: 50%; height: 4rem; margin-left: 25%; position: fixed; bottom: 0px; left: 0px; }
+html body section div.linkNav a { display: block; width: 50%; height: 4rem; border-width: 1px 1px 0px 0px; border-color: #fafafa; border-style: solid; float: left; color: #149eff; padding-top: 0.24rem; box-sizing: border-box; }
+html body section div.linkNav a:first-child { border-left-width: 1px; }
+html body section div.linkNav p { font-size: 12px; }
 
 /*# sourceMappingURL=edit.css.map */

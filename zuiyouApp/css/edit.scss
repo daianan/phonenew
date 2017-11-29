@@ -1,33 +1,33 @@
 $sc:25;
-html{
+html {
     height: 100%;
     width: 100%;
-    body{
+    body {
         @extend html;
-        header{
+        background: #fff;
+        header {
             padding: 6/$sc+rem 20/$sc+rem;
             box-sizing: border-box;
-            span{
+            span {
                 display: block;
                 height: 100%;
                 margin: 0;
             }
-            span.editClose{
+            span.editClose {
                 float: left;
                 font-size: 20px;
                 color: #888;
             }
-            span.addItem{
+            span.addItem {
                 float: right;
                 width: 50/$sc+rem;
                 color: #149eff;
                 font-weight: bold;
             }
         }
-        section{
+        section {
             width: 100%;
-//          padding-top: 43/$sc+rem;
-            textarea{
+            textarea {
                 overflow-x: hidden;
                 width: 100%;
                 height: auto;
@@ -37,9 +37,32 @@ html{
                 outline: none;
                 resize: none;
             }
-        }
-        footer{
-            
+            div.linkNav {
+                width: 50%;
+                height: 100/$sc+rem;
+                margin-left: 25%;
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                a {
+                    display: block;
+                    width: 50%;
+                    height: 100/$sc+rem;
+                    border-width: 1px 1px 0px 0px;
+                    border-color: #fafafa;
+                    border-style: solid;
+                    float: left;
+                    color: #149eff;
+                    padding-top: 6/$sc+rem;
+                    box-sizing: border-box;
+                    &:first-child{
+                        border-left-width: 1px;
+                    }
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
