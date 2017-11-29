@@ -5,7 +5,7 @@ html{
     body{
         @extend html;
         header{
-            padding: 6/$sc+rem 12/$sc+rem;
+            padding: 6/$sc+rem 20/$sc+rem;
             box-sizing: border-box;
             span{
                 display: block;
@@ -15,14 +15,28 @@ html{
             span.editClose{
                 float: left;
                 font-size: 20px;
+                color: #888;
             }
             span.addItem{
                 float: right;
                 width: 50/$sc+rem;
+                color: #149eff;
+                font-weight: bold;
             }
         }
         section{
-            
+            width: 100%;
+//          padding-top: 43/$sc+rem;
+            textarea{
+                overflow-x: hidden;
+                width: 100%;
+                height: auto;
+                padding: 20/$sc+rem;
+                border: none;
+                box-sizing: border-box;
+                outline: none;
+                resize: none;
+            }
         }
         footer{
             
