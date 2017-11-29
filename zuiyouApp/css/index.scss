@@ -15,9 +15,13 @@ html {
             }
         }
         section.indexSection {
+            width: 300%;
             height: auto;
+            ul{
+                width: 33.33%;
+                float: left;
+            }
             ul.tieList {
-                width: 100%;
                 height: auto;
                 padding: 0 8/$sc+rem;
                 box-sizing: border-box;

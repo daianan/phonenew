@@ -1,8 +1,9 @@
 html, html body { height: 100%; width: 100%; }
 html body header a { width: 27%; }
 html body header span.edit { float: right; background: url(../img/icon4_03.png) no-repeat -1px 0px; background-size: 1.2rem 1.04rem; }
-html body section.indexSection { height: auto; }
-html body section.indexSection ul.tieList { width: 100%; height: auto; padding: 0 0.32rem; box-sizing: border-box; }
+html body section.indexSection { width: 300%; height: auto; }
+html body section.indexSection ul { width: 33.33%; float: left; }
+html body section.indexSection ul.tieList { height: auto; padding: 0 0.32rem; box-sizing: border-box; }
 html body section.indexSection ul.tieList li { width: 100%; height: auto; box-sizing: border-box; background: #fff; padding: 0.24rem 0; border-bottom: 1px solid #eee; margin-bottom: 0.24rem; }
 html body section.indexSection ul.tieList li div.tieListTop { height: 0.96rem; width: 100%; font-size: 14px; margin-bottom: 0.24rem; }
 html body section.indexSection ul.tieList li div.tieListTop span.touXiang { display: inline-block; width: 0.96rem; height: 0.96rem; border: 1px solid #ccc; border-radius: 50%; float: left; margin-left: 0.32rem; overflow: hidden; }
