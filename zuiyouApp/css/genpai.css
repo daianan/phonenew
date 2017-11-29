@@ -13,6 +13,6 @@ html body section.genSection ul li div.genFLoat i.genFLoatBo b { font-weight: no
 html body section.genSection ul li div.genFLoat i.genFLoatBo b::before { content: ''; border-width: 8px; border-style: solid; border-color: transparent transparent transparent #fff; border-radius: 2px; position: absolute; top: 2px; left: -10px; }
 html body section.genSection ul li div.genFLoat i.genFLoatBo b::after { content: 'w'; }
 html body section.genSection ul li div.genFLoat i.genFLoatLogo { display: inline-block; width: 0.8rem; height: 0.8rem; border: 1px solid #eee; float: right; border-radius: 50%; margin-right: 0.48rem; }
-html body section.genSection ul li.last { height: 2.56rem; width: 100%; }
+html body section.genSection ul li.last { height: 2.56rem; width: 100%; border: none; background: #fafafa; }
 
 /*# sourceMappingURL=genpai.css.map */
