@@ -15,9 +15,10 @@ html {
             }
         }
         section.indexSection {
+            height: auto;
             ul.tieList {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 padding: 0 8/$sc+rem;
                 box-sizing: border-box;
                 li {
@@ -63,9 +64,11 @@ html {
                         font-size: 16px;
                         text-align: left;
                         padding: 0 10/$sc+rem;
+                        margin-bottom: 6/$sc+rem;
                     }
                     div.tieListMain {
                         min-height: 50/$sc+rem;
+                        margin-bottom: 6/$sc+rem;
                         img{
                             width: 100%;
                             height: 180/$sc+rem;
@@ -76,6 +79,7 @@ html {
                     div.caoZuo {
                         height: 16/$sc+rem;
                         width: 100%;
+                        margin-bottom: 6/$sc+rem;
                         span {
                             display: inline-block;
                             width: 64/$sc+rem;
@@ -124,9 +128,10 @@ html {
                             float: right;
                         }
                     }
-                    &:last-of-type {
-                        margin-bottom: 64/$sc+rem;
-                    }
+                }
+                li.last{
+                    height: 64/$sc+rem;
+                    width: 100%;
                 }
             }
         }

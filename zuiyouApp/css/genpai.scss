@@ -34,9 +34,6 @@ html {
                     &:nth-of-type(odd) {
                         margin-left: 2/$sc+rem;
                     }
-                    &:last-of-type{
-                        margin-bottom: 64/$sc+rem;
-                    }
                     img {
                         width: 100%;
                         height: 272/$sc+rem;
@@ -91,6 +88,10 @@ html {
                             margin-right: 12/$sc+rem;
                         }
                     }
+                }
+                li.last{
+                    height: 64/$sc+rem;
+                    width: 100%;
                 }
             }
         }
