@@ -1,6 +1,5 @@
 $(function() {
 	$("#editClose").on("tap", function() {
-		console.log(eeee)
 		history.back();
 	});
 	//文本域高度自适应
