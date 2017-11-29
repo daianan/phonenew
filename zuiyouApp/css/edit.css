@@ -1,0 +1,7 @@
+html, html body { height: 100%; width: 100%; }
+html body header { padding: 0.24rem 0.48rem; box-sizing: border-box; }
+html body header span { display: block; height: 100%; margin: 0; }
+html body header span.editClose { float: left; font-size: 20px; }
+html body header span.addItem { float: right; width: 2rem; }
+
+/*# sourceMappingURL=edit.css.map */

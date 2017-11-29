@@ -1,0 +1,31 @@
+$sc:25;
+html{
+    height: 100%;
+    width: 100%;
+    body{
+        @extend html;
+        header{
+            padding: 6/$sc+rem 12/$sc+rem;
+            box-sizing: border-box;
+            span{
+                display: block;
+                height: 100%;
+                margin: 0;
+            }
+            span.editClose{
+                float: left;
+                font-size: 20px;
+            }
+            span.addItem{
+                float: right;
+                width: 50/$sc+rem;
+            }
+        }
+        section{
+            
+        }
+        footer{
+            
+        }
+    }
+}
