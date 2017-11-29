@@ -1,4 +1,9 @@
 $(function() {
+	$("#editClose").on("tap", function() {
+		console.log(eeee)
+		history.back();
+	});
+	//文本域高度自适应
 	$.fn.autoTextarea = function(options) {
 		var defaults = {
 			maxHeight: null,
@@ -27,8 +32,5 @@ $(function() {
 		$('#editTextarea').autoTextarea({
 			maxHeight: 300
 		});
-	});
-	$("#editClose").on("tap", function() {
-		history.back();
 	});
 });
