@@ -5,6 +5,7 @@ html {
     body {
         @extend html;
         background: #fff;
+        overflow: hidden;
         header {
             padding: 6/$sc+rem 20/$sc+rem;
             box-sizing: border-box;

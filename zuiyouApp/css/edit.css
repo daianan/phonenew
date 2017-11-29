@@ -1,5 +1,5 @@
 html, html body { height: 100%; width: 100%; }
-html body { background: #fff; }
+html body { background: #fff; overflow: hidden; }
 html body header { padding: 0.24rem 0.8rem; box-sizing: border-box; }
 html body header span { display: block; height: 100%; margin: 0; }
 html body header span.editClose { float: left; font-size: 20px; color: #888; }
