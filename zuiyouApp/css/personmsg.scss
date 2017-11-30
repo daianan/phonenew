@@ -1,5 +1,6 @@
 $sc:25;
 html {
+    overflow: hidden;
     body {
         header {
             width: 100%;
@@ -13,7 +14,7 @@ html {
                     float: left;
                     transform: rotate(-135deg);
                 }
-                P{
+                P {
                     position: absolute;
                     top: 0;
                     left: 50%;
@@ -25,21 +26,82 @@ html {
                     letter-spacing: 3px;
                 }
             }
-            div.personTou{
-                height: 100/$sc+rem;
+            div.personTou {
+                height: 120/$sc+rem;
                 width: 76/$sc+rem;
-                border: 1px solid #ccc;
-                margin: 60/$sc+rem auto 0;
-                img{
+                margin: 54/$sc+rem auto 0;
+                img {
                     width: 70/$sc+rem;
                     height: 70/$sc+rem;
                     border-radius: 50%;
                 }
-                p{
+                p {
                     font-size: 12px;
+                    margin-top: 16/$sc+rem;
                 }
             }
         }
-        section {}
+        section {
+            padding-bottom: 0;
+            margin-top: 230/$sc+rem;
+            padding: 12/$sc+rem 20/$sc+rem;
+            background: #fff;
+            div.personMain {
+                overflow: hidden;
+                ul {
+                    li {
+                        width: 100%;
+                        height: 30/$sc+rem;
+                        line-height: 30/$sc+rem;
+                        font-size: 14px;
+                        color: #888;
+                        label {
+                            width: 90/$sc+rem;
+                            height: 100%;
+                            float: left;
+                            text-align: left;
+                            color: #333;
+                            letter-spacing: 2px;
+                        }
+                        input {
+                            float: left;
+                            line-height: 30/$sc+rem;
+                            border: none;
+                            outline: none;
+                            color: #888;
+                            width: 200/$sc+rem;
+                            letter-spacing: 2px;
+                        }
+                        p {
+                            text-align: left;
+                            letter-spacing: 2px;
+                        }
+                        span {
+                            display: inline-block;
+                            width: 200/$sc+rem;
+                            height: 100%;
+                            line-height: 30/$sc+rem;
+                            float: left;
+                            input{
+                                width: 16/$sc+rem;
+                                height: 16/$sc+rem;
+                                margin-top: 7/$sc+rem;
+                            }
+                            b {
+                                display: inline-block;
+                                width: 40/$sc+rem;
+                                height: 100%;
+                                float: left;
+                                line-height: 30/$sc+rem;
+                                font-weight: normal;
+                                &:nth-of-type(1){
+                                    margin-right: 40/$sc+rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

@@ -1,4 +1,4 @@
-div, body, header, section, footer, span, a, ul, li, p, i, b, h5 { margin: 0; padding: 0; }
+div, body, header, section, footer, span, a, ul, li, p, i, b, h5, input { margin: 0; padding: 0; }
 
 body { font-family: 'Avenir', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-align: center; color: #2c3e50; }
 

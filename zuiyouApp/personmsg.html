@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>个人信息</title>
@@ -8,11 +9,12 @@
 		<link rel="stylesheet" href="css/personmsg.css" />
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/zepto.js"></script>
-		<script type="text/javascript" src="js/touch.js" ></script>
+		<script type="text/javascript" src="js/touch.js"></script>
 		<script type="text/javascript">
 			document.documentElement.style.fontSize = innerWidth / 15 + "px";
 		</script>
 	</head>
+
 	<body>
 		<header>
 			<div class="personTitle">
@@ -20,19 +22,44 @@
 				<p>个人信息</p>
 			</div>
 			<div class="personTou">
-				<img src="img/tou1.jpg"/>
+				<img src="img/tou1.jpg" />
 				<p>点击修改头像</p>
 			</div>
 		</header>
 		<section>
-			
+			<div class="personMain">
+				<ul>
+					<li>
+						<label>昵称</label>
+						<input type="text" value="为我以为" />
+					</li>
+					<li>
+						<label>性别</label>
+						<span>
+							<input type="radio" name="sex" />
+							<b>男</b>
+							<input type="radio" name="sex" checked />
+							<b>女</b>
+						</span>
+					</li>
+					<li>
+						<label>生日</label>
+						<input type="data" value="1996-03-09" />
+					</li>
+					<li>
+						<label>个人签名</label>
+						<p>吃鸡吃鸡吃鸡</p>
+					</li>
+				</ul>
+			</div>
 		</section>
 	</body>
 	<script type="text/javascript">
-		$(function(){
-			$("#personHis").on("tap",function(){
+		$(function() {
+			$("#personHis").on("tap", function() {
 				history.back();
 			});
 		});
 	</script>
+
 </html>
