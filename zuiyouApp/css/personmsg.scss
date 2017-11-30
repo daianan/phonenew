@@ -1,0 +1,45 @@
+$sc:25;
+html {
+    body {
+        header {
+            width: 100%;
+            height: 220/$sc+rem;
+            div.personTitle {
+                width: 100%;
+                height: 30/$sc+rem;
+                padding-left: 14/$sc+rem;
+                position: relative;
+                span {
+                    float: left;
+                    transform: rotate(-135deg);
+                }
+                P{
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    margin-left: -38px;
+                    height: 100%;
+                    line-height: 30/$sc+rem;
+                    font-size: 16px;
+                    font-weight: bold;
+                    letter-spacing: 3px;
+                }
+            }
+            div.personTou{
+                height: 100/$sc+rem;
+                width: 76/$sc+rem;
+                border: 1px solid #ccc;
+                margin: 60/$sc+rem auto 0;
+                img{
+                    width: 70/$sc+rem;
+                    height: 70/$sc+rem;
+                    border-radius: 50%;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+        section {}
+    }
+}

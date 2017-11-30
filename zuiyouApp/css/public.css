@@ -1,4 +1,4 @@
-div, body, header, section, footer, span, a, ul, li, p, i, b { margin: 0; padding: 0; }
+div, body, header, section, footer, span, a, ul, li, p, i, b, h5 { margin: 0; padding: 0; }
 
 body { font-family: 'Avenir', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-align: center; color: #2c3e50; }
 
@@ -23,5 +23,6 @@ html body footer ul.footerNav li a span { display: inline-block; width: 100%; he
 html body footer ul.footerNav li a span img { width: 1.04rem; height: 1.04rem; }
 html body footer ul.footerNav li a p { width: 100%; float: left; text-align: center; }
 html body footer ul.footerNav li a.footerNavSel { color: salmon; }
+html .jian { display: inline-block; width: 0.56rem; height: 0.56rem; border: 3px solid #ccc; border-width: 3px 3px 0 0; margin-right: 2.2rem; margin-top: 0.24rem; background: transparent; }
 
 /*# sourceMappingURL=public.css.map */

@@ -10,7 +10,8 @@ ul,
 li,
 p,
 i,
-b {
+b,
+h5 {
     margin: 0;
     padding: 0;
 }
@@ -114,7 +115,7 @@ html {
                                 height: 26/$sc+rem;
                             }
                         }
-                        p{
+                        p {
                             width: 100%;
                             float: left;
                             text-align: center;
@@ -126,5 +127,15 @@ html {
                 }
             }
         }
+    }
+    .jian {
+        display: inline-block;
+        width: 14/$sc+rem;
+        height: 14/$sc+rem;
+        border: 3px solid #ccc;
+        border-width: 3px 3px 0 0;
+        margin-right: 55/$sc+rem;
+        margin-top: 6/$sc+rem;
+        background: transparent;
     }
 }

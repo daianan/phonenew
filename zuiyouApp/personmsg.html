@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/personmsg.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/touch.js" ></script>
+		<script type="text/javascript">
+			document.documentElement.style.fontSize = innerWidth / 15 + "px";
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="personTitle">
+				<span id="personHis" class="jian"></span>
+				<p>个人信息</p>
+			</div>
+			<div class="personTou">
+				<img src="img/tou1.jpg"/>
+				<p>点击修改头像</p>
+			</div>
+		</header>
+		<section>
+			
+		</section>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("#personHis").on("tap",function(){
+				history.back();
+			});
+		});
+	</script>
+</html>
