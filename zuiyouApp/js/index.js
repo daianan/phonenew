@@ -7,17 +7,18 @@ $(function() {
 	$("#edit").on('tap', function() {
 		window.location.href = "http://daianan.github.io/phonenew/zuiyouApp/edit.html";
 	});
+	
+	//删除动态
 	var indexCloses = $("#tieList1 b[class=close]");
 	var indexLists1 = $("#tieList1 > li");
 	indexCloses.on("tap", function() {
 		var bIndex = $(this).parent().parent().index();
 		indexLists1.eq(bIndex).slideToggle(500);
-		//		indexLists1.eq(bIndex).remove();
+		//indexLists1.eq(bIndex).remove();
 	});
 
-	var n = 0;
+//	var n = 0;
 	var indexHeaderNavs = $("#indexHeader a");
-	var indexSection = document.getElementById("indexSection");
 	$("#indexSection ul").eq(0).fadeIn().siblings("ul").fadeOut();
 	indexHeaderNavs.on("tap", function() {
 		$("#indexSection ul").eq(($(this).index() - 1)).fadeIn().siblings("ul").fadeOut();
@@ -32,6 +33,7 @@ $(function() {
 	});*/
 
 	//左滑、右滑
+//	var indexSection = document.getElementById("indexSection");
 	/*indexSection.addEventListener("touchstart", function(e) {
 		e.preventDefault();
 	});*/
