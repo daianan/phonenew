@@ -12,8 +12,7 @@ p,
 i,
 b,
 h5,
-input,
-nav {
+input {
     margin: 0;
     padding: 0;
 }
@@ -47,7 +46,7 @@ html {
             width: 100%;
             position: fixed;
             height: 42/$sc+rem;
-            padding: 2/$sc+rem 10/$sc+rem;
+            padding: 2/$sc+rem 16/$sc+rem;
             background: #fff;
             top: 0px;
             left: 0px;
@@ -73,7 +72,7 @@ html {
                 margin-top: 6/$sc+rem;
             }
             span.search {
-                background: url(../img/icon3_03.png) no-repeat 0px 0px;
+                background: url(../icon/icon3_03.png) no-repeat 0px 0px;
                 background-size: 30/$sc+rem 25/$sc+rem;
             }
         }

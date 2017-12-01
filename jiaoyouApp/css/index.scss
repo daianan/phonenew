@@ -14,7 +14,7 @@ html {
             }
             span.edit {
                 float: right;
-                background: url(../img/icon4_03.png) no-repeat -1px 0px;
+                background: url(../icon/icon4_03.png) no-repeat -1px 0px;
                 background-size: 30/$sc+rem 26/$sc+rem;
             }
         }
@@ -130,15 +130,15 @@ html {
                                     float: left;
                                 }
                                 &:nth-of-type(1) i {
-                                    background: url(../img/icon10_03.png) no-repeat 0px 2px;
+                                    background: url(../icon/icon10_03.png) no-repeat 0px 2px;
                                     background-size: 20/$sc+rem 14/$sc+rem;
                                 }
                                 &:nth-of-type(2) i {
-                                    background: url(../img/icon13_03.png) no-repeat 0px 2px;
+                                    background: url(../icon/icon13_03.png) no-repeat 0px 2px;
                                     background-size: 20/$sc+rem 14/$sc+rem;
                                 }
                                 &:nth-of-type(3) i {
-                                    background: url(../img/icon8_03.png) no-repeat 0px 2px;
+                                    background: url(../icon/icon8_03.png) no-repeat 0px 2px;
                                     background-size: 20/$sc+rem 14/$sc+rem;
                                 }
                             }

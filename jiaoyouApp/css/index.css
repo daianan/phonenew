@@ -2,7 +2,7 @@ html, html body { height: 100%; width: 100%; }
 html body header { height: 100%; }
 html body header a { width: 35%; }
 html body header a:nth-of-type(1) { margin-left: 1.36rem; }
-html body header span.edit { float: right; background: url(../img/icon4_03.png) no-repeat -1px 0px; background-size: 1.2rem 1.04rem; }
+html body header span.edit { float: right; background: url(../icon/icon4_03.png) no-repeat -1px 0px; background-size: 1.2rem 1.04rem; }
 html body section.indexSection { height: auto; }
 html body section.indexSection div#indexSection { width: 100%; height: auto; position: relative; }
 html body section.indexSection div#indexSection ul { width: 100%; float: left; position: absolute; left: 0; top: 0; }
@@ -22,9 +22,9 @@ html body section.indexSection div#indexSection ul.tieList li div.caoZuo span b 
 html body section.indexSection div#indexSection ul.tieList li div.caoZuo span b::before { content: '('; width: 0.08rem; height: 0.56rem; }
 html body section.indexSection div#indexSection ul.tieList li div.caoZuo span b::after { content: ')'; width: 0.08rem; height: 0.56rem; }
 html body section.indexSection div#indexSection ul.tieList li div.caoZuo span i { display: inline-block; width: 0.8rem; height: 0.64rem; float: left; }
-html body section.indexSection div#indexSection ul.tieList li div.caoZuo span:nth-of-type(1) i { background: url(../img/icon10_03.png) no-repeat 0px 2px; background-size: 0.8rem 0.56rem; }
-html body section.indexSection div#indexSection ul.tieList li div.caoZuo span:nth-of-type(2) i { background: url(../img/icon13_03.png) no-repeat 0px 2px; background-size: 0.8rem 0.56rem; }
-html body section.indexSection div#indexSection ul.tieList li div.caoZuo span:nth-of-type(3) i { background: url(../img/icon8_03.png) no-repeat 0px 2px; background-size: 0.8rem 0.56rem; }
+html body section.indexSection div#indexSection ul.tieList li div.caoZuo span:nth-of-type(1) i { background: url(../icon/icon10_03.png) no-repeat 0px 2px; background-size: 0.8rem 0.56rem; }
+html body section.indexSection div#indexSection ul.tieList li div.caoZuo span:nth-of-type(2) i { background: url(../icon/icon13_03.png) no-repeat 0px 2px; background-size: 0.8rem 0.56rem; }
+html body section.indexSection div#indexSection ul.tieList li div.caoZuo span:nth-of-type(3) i { background: url(../icon/icon8_03.png) no-repeat 0px 2px; background-size: 0.8rem 0.56rem; }
 html body section.indexSection div#indexSection ul.tieList li div.caoZuo span.zan { float: right; }
 html body section.indexSection div#indexSection ul.tieList li.last { height: 2.24rem; width: 100%; border: none; background: #fafafa; }
 

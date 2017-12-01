@@ -10,10 +10,16 @@ html body header div.woHeader div.woMsg div h5 { display: inline-block; letter-s
 html body header div.woHeader div.woMsg div a.jian { border-color: #fff; float: right; transform: rotate(45deg); }
 html body header div.woHeader div.woMsg p { text-align: left; font-size: 14px; margin-top: 0.24rem; }
 html body section { width: 100%; padding-bottom: 0; margin-top: 8.8rem; height: auto; }
-html body section div.woMain { width: 100%; height: 3.2rem; background: #fff; }
-html body section div.woMain nav { width: 100%; height: 100%; padding: 0.68rem 0.8rem; box-sizing: border-box; }
+html body section div.woMain { width: 100%; height: auto; }
+html body section div.woMain nav { width: 100%; height: 3.2rem; padding: 0.68rem 0.8rem; box-sizing: border-box; background: #fff; }
 html body section div.woMain nav div { width: 25%; height: 1.84rem; float: left; }
 html body section div.woMain nav div b { width: 100%; display: block; height: 50%; line-height: 1.2rem; font-size: 16px; }
 html body section div.woMain nav div a { width: 100%; display: block; height: 50%; line-height: 1.2rem; font-size: 12px; letter-spacing: 2px; color: #888; }
+html body section div.woMain ul { width: 100%; height: 8rem; margin-top: 0.4rem; background: #fff; }
+html body section div.woMain ul li { width: 100%; height: 2rem; padding: 0.4rem 0.8rem; box-sizing: border-box; border-bottom: 1px solid #f3f3f3; }
+html body section div.woMain ul li i { display: inline-block; width: 1.2rem; height: 1.2rem; background: #00B38A; float: left; }
+html body section div.woMain ul li span.woTxt { font-size: 14px; font-weight: bold; letter-spacing: 1px; float: left; margin-left: 0.48rem; width: 2.4rem; height: 1.2rem; line-height: 1.2rem; }
+html body section div.woMain ul li b { display: inline-block; width: 0.56rem; height: 1.2rem; line-height: 1.2rem; font-size: 14px; font-weight: normal; float: right; margin-right: 0.12rem; }
+html body section div.woMain ul li span.woNext { width: 0.24rem; height: 0.24rem; border-width: 2px 2px 0 0; transform: rotate(45deg); float: right; margin-right: 0; margin-top: 0.44rem; }
 
 /*# sourceMappingURL=wo.css.map */

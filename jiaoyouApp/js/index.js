@@ -9,11 +9,18 @@ $(function() {
 	});
 	
 	//删除动态
-	var indexCloses = $("#tieList1 b[class=close]");
+	var indexCloses1 = $("#tieList1 b[class=close]");
+	var indexCloses2 = $("#tieList2 b[class=close]");
 	var indexLists1 = $("#tieList1 > li");
-	indexCloses.on("tap", function() {
+	var indexLists2 = $("#tieList2 > li");
+	indexCloses1.on("tap", function() {
 		var bIndex = $(this).parent().parent().index();
 		indexLists1.eq(bIndex).slideToggle(500);
+		//indexLists1.eq(bIndex).remove();
+	});
+	indexCloses2.on("tap", function() {
+		var bIndex = $(this).parent().parent().index();
+		indexLists2.eq(bIndex).slideToggle(500);
 		//indexLists1.eq(bIndex).remove();
 	});
 
