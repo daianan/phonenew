@@ -24,6 +24,23 @@ $(function() {
 		//indexLists1.eq(bIndex).remove();
 	});
 
+	//添加数据（ajax）
+	var indexTous=$("#tieList1 li div[class=tieListTop] img");
+	var indexNicks=$("#tieList1 li div[class=tieListTop] p[class=nick]");
+	var indexCons=$("#tieList1 li p[class=tieListMsg]");
+	var indexImgs=$("#tieList1 li div[class=tieListMain] img");
+	console.log(json);
+	for (var i=0;i<=6;i++) {
+		console.log(json.indexLi[i].nick)
+//		indexTous.eq(i).attr("src",json.indexLi[i].touImg);
+//		indexNicks.eq(i).html(json.indexLi[i].nick);
+	}
+	
+	
+	
+	
+	
+	
 //	var n = 0;
 	var indexHeaderNavs = $("#indexHeader a");
 	$("#indexSection ul").eq(0).fadeIn().siblings("ul").fadeOut();
