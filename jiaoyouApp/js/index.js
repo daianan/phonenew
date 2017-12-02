@@ -2,10 +2,10 @@ $(function() {
 	var footerNavs = $("#footerNav li a");
 	footerNavs.eq(0).addClass('footerNavSel').siblings('li').removeClass('footerNavSel');
 	$("#search").on('tap', function() {
-		window.location.href = "http://daianan.github.io/phonenew/zuiyouApp/search.html";
+		window.location.href = "http://daianan.github.io/phonenew/jiaoyouApp/search.html";
 	});
 	$("#edit").on('tap', function() {
-		window.location.href = "http://daianan.github.io/phonenew/zuiyouApp/edit.html";
+		window.location.href = "http://daianan.github.io/phonenew/jiaoyouApp/edit.html";
 	});
 	
 	//删除动态
