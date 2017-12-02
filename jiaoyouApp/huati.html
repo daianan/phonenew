@@ -39,7 +39,10 @@
 		<script type="text/javascript">
 			$(function() {
 				var footerNavs = $("#footerNav li a");
-				footerNavs.eq(1).addClass('footerNavSel').siblings('li').removeClass('footerNavSel');
+			var footerIcon = $("#footerNav li a span img");
+			footerNavs.eq(1).addClass('footerNavSel').siblings('li').removeClass('footerNavSel');
+			console.log(footerIcon)
+			footerIcon.eq(1).attr("src","icon/icon21_03.png");
 			});
 		</script>
 	</body>

@@ -20,18 +20,18 @@
 				<p class="woHeaderBg"></p>
 				<div class="woMsg">
 					<div class="woTouX">
-						<a href="personmsg.html"><span class="woTou"></span></a>
+						<a href="login.html"><span class="woTou"></span></a>
 					</div>
 					<div>
-						<h5>为我认为</h5>
-						<a href="personmsg.html" class="jian"></a>
+						<h5>未登录</h5>
+						<a href="login.html" class="jian"></a>
 					</div>
-					<p>吃鸡吃鸡吃鸡</p>
+					<p>点击头像登录</p>
 				</div>
 			</div>
 		</header>
 		<section>
-			<div class="woMain">
+			<div class="woMain" id="woMain">
 				<nav>
 					<div>
 						<b>0</b>
@@ -44,25 +44,33 @@
 				</nav>
 				<ul>
 					<li>
-						<i></i>
+						<i>
+							<img />
+						</i>
 						<span class="woTxt">我的帖子</span>
 						<span class="jian woNext"></span>
 						<b>0</b>
 					</li>
 					<li>
-						<i></i>
+						<i>
+							<img />
+						</i>
 						<span class="woTxt">我的评论</span>
 						<span class="jian woNext"></span>
 						<b>0</b>
 					</li>
 					<li>
-						<i></i>
+						<i>
+							<img />
+						</i>
 						<span class="woTxt">浏览历史</span>
 						<span class="jian woNext"></span>
 						<b>0</b>
 					</li>
 					<li>
-						<i></i>
+						<i>
+							<img />
+						</i>
 						<span class="woTxt">我赞过的</span>
 						<span class="jian woNext"></span>
 						<b>0</b>
@@ -94,12 +102,20 @@
 				</li>
 			</ul>
 		</footer>
-		<script type="text/javascript">
-			$(function() {
-				var footerNavs = $("#footerNav li a");
-				footerNavs.eq(3).addClass('footerNavSel').siblings('li').removeClass('footerNavSel');
-			});
-		</script>
 	</body>
+
+	<script type="text/javascript">
+		$(function() {
+			var footerNavs = $("#footerNav li a");
+			var footerIcon = $("#footerNav li a span img");
+			footerNavs.eq(3).addClass('footerNavSel').siblings('li').removeClass('footerNavSel');
+			console.log(footerIcon)
+			footerIcon.eq(3).attr("src","icon/icon23_03.png");
+			var woIcons=$("#woMain ul li i img");
+			for(var i=0;i<woIcons.length;i++){
+				woIcons.eq(i).attr("src","icon/woIcon0"+(i+1)+"_03.png")
+			}
+		});
+	</script>
 
 </html>

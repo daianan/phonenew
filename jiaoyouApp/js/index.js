@@ -1,13 +1,10 @@
 $(function() {
 	var footerNavs = $("#footerNav li a");
+	var footerIcon = $("#footerNav li a span img");
 	footerNavs.eq(0).addClass('footerNavSel').siblings('li').removeClass('footerNavSel');
-	$("#search").on('tap', function() {
-		window.location.href = "http://daianan.github.io/phonenew/jiaoyouApp/search.html";
-	});
-	$("#edit").on('tap', function() {
-		window.location.href = "http://daianan.github.io/phonenew/jiaoyouApp/edit.html";
-	});
-	
+	console.log(footerIcon)
+	footerIcon.eq(0).attr("src", "icon/icon17_03.png");
+
 	//删除动态
 	var indexCloses1 = $("#tieList1 b[class=close]");
 	var indexCloses2 = $("#tieList2 b[class=close]");
@@ -23,37 +20,37 @@ $(function() {
 	});
 
 	//添加数据
-	var indexTous=$("#tieList1 li div[class=tieListTop] img");
-	var indexNicks=$("#tieList1 li div[class=tieListTop] p[class=nick]");
-	var indexCons=$("#tieList1 li p[class=tieListMsg]");
-	var indexImgs=$("#tieList1 li div[class=tieListMain] img");
-	for (var i=0;i<indexTous.length;i++) {
-		indexTous.eq(i).attr("src",json.indexLi1[i].touImg);
+	var indexTous = $("#tieList1 li div[class=tieListTop] img");
+	var indexNicks = $("#tieList1 li div[class=tieListTop] p[class=nick]");
+	var indexCons = $("#tieList1 li p[class=tieListMsg]");
+	var indexImgs = $("#tieList1 li div[class=tieListMain] img");
+	for(var i = 0; i < indexTous.length; i++) {
+		indexTous.eq(i).attr("src", json.indexLi1[i].touImg);
 		indexNicks.eq(i).html(json.indexLi1[i].nick);
 		indexCons.eq(i).html(json.indexLi1[i].content);
-		indexImgs.eq(i).attr("src",json.indexLi1[i].photo);
+		indexImgs.eq(i).attr("src", json.indexLi1[i].photo);
 	}
-	var indexTou=$("#tieList2 li div[class=tieListTop] img");
-	var indexNick=$("#tieList2 li div[class=tieListTop] p[class=nick]");
-	var indexCon=$("#tieList2 li p[class=tieListMsg]");
-	var indexImg=$("#tieList2 li div[class=tieListMain] img");
-	$.each(json, function(k,v) {
-		for(var i=0;i<6;i++){
-			indexTou.eq(i).attr("src",json.indexLi2[i].touImg);
+	var indexTou = $("#tieList2 li div[class=tieListTop] img");
+	var indexNick = $("#tieList2 li div[class=tieListTop] p[class=nick]");
+	var indexCon = $("#tieList2 li p[class=tieListMsg]");
+	var indexImg = $("#tieList2 li div[class=tieListMain] img");
+	$.each(json, function(k, v) {
+		for(var i = 0; i < 6; i++) {
+			indexTou.eq(i).attr("src", json.indexLi2[i].touImg);
 			indexNick.eq(i).html(json.indexLi2[i].nick);
 			indexCon.eq(i).html(json.indexLi2[i].content);
-			indexImg.eq(i).attr("src",json.indexLi2[i].photo);
+			indexImg.eq(i).attr("src", json.indexLi2[i].photo);
 		}
 	});
-	
-//	var n = 0;
+
+	//	var n = 0;
 	var indexHeaderNavs = $("#indexHeader a");
 	$("#indexSection ul").eq(0).fadeIn().siblings("ul").fadeOut();
 	indexHeaderNavs.on("tap", function() {
 		$("#indexSection ul").eq(($(this).index() - 1)).fadeIn().siblings("ul").fadeOut();
 		indexHeaderNavs.eq(($(this).index() - 1)).addClass("headerSel").siblings("a").removeClass("headerSel");
 	});
-	
+
 	//给div#indexSection设高
 	/*var arr = [$("#indexSection ul").eq(0).height(), $("#indexSection ul").eq(1).height(), $("#indexSection ul").eq(2).height()];
 	$("#indexSection").css("height", arr.sort()[0]);*/
@@ -62,7 +59,7 @@ $(function() {
 	});*/
 
 	//左滑、右滑
-//	var indexSection = document.getElementById("indexSection");
+	//	var indexSection = document.getElementById("indexSection");
 	/*indexSection.addEventListener("touchstart", function(e) {
 		e.preventDefault();
 	});*/

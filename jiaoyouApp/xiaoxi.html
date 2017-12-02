@@ -41,7 +41,10 @@
 		<script type="text/javascript">
 			$(function() {
 				var footerNavs = $("#footerNav li a");
-				footerNavs.eq(2).addClass('footerNavSel').siblings('li').removeClass('footerNavSel');
+			var footerIcon = $("#footerNav li a span img");
+			footerNavs.eq(2).addClass('footerNavSel').siblings('li').removeClass('footerNavSel');
+			console.log(footerIcon)
+			footerIcon.eq(2).attr("src","icon/icon19_03.png");
 			});
 		</script>
 	</body>

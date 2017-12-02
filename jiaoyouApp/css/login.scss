@@ -1,0 +1,71 @@
+$sc:25;
+html{
+    body{
+        background: #fff;
+        div.loginHeader{
+            height: 40/$sc+rem;
+            padding: 6/$sc+rem 20/$sc+rem;
+            box-sizing: border-box;
+            position: relative;
+            font-size: 16px;
+            .loginBack{
+                transform: rotate(-135deg);
+                position: absolute;
+                top: 8/$sc+rem;
+                left: 20/$sc+rem;
+            }
+            span.loginTxt{
+                display: block;
+                position: absolute;
+                top: 8/$sc+rem;
+                left: 50%;
+                margin-left: -16/$sc+rem;
+            }
+            span.loginReg{
+                float: right;
+                display: block;
+                width: 60/$sc+rem;
+                height: 30/$sc+rem;
+                line-height: 30/$sc+rem;
+                text-align: right;
+                color: #888;
+                margin: 0;
+            }
+        }
+        div.loginMain{
+            width: 100%;
+            height: 260/$sc+rem;
+            padding: 40/$sc+rem 34/$sc+rem 0;
+            position: relative;
+            box-sizing: border-box;
+            div{
+                height: 60/$sc+rem;
+                width: 100%;
+                border-bottom: 1px solid #eee;
+                padding-top: 16/$sc+rem;
+                box-sizing: border-box;
+                input{
+                    height: 40/$sc+rem; 
+                    width: 100%;
+                    font-size: 14px;
+                    padding: 0 16/$sc+rem;
+                    outline: none;
+                    border: none;
+                }
+            }
+            a{
+                display: block;
+                width: 300/$sc+rem;
+                height: 40/$sc+rem;
+                line-height: 40/$sc+rem;
+                background: #888;
+                color: #fff;
+                border-radius: 20/$sc+rem;
+                font-size: 16px;
+                position: absolute;
+                bottom: 20/$sc+rem;
+                left: 34/$sc+rem;
+            }
+        }
+    }
+}
