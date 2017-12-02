@@ -16,30 +16,35 @@ $(function() {
 	indexCloses1.on("tap", function() {
 		var bIndex = $(this).parent().parent().index();
 		indexLists1.eq(bIndex).slideToggle(500);
-		//indexLists1.eq(bIndex).remove();
 	});
 	indexCloses2.on("tap", function() {
 		var bIndex = $(this).parent().parent().index();
 		indexLists2.eq(bIndex).slideToggle(500);
-		//indexLists1.eq(bIndex).remove();
 	});
 
-	//添加数据（ajax）
+	//添加数据
 	var indexTous=$("#tieList1 li div[class=tieListTop] img");
 	var indexNicks=$("#tieList1 li div[class=tieListTop] p[class=nick]");
 	var indexCons=$("#tieList1 li p[class=tieListMsg]");
 	var indexImgs=$("#tieList1 li div[class=tieListMain] img");
-	console.log(json);
-	for (var i=0;i<=6;i++) {
-		console.log(json.indexLi[i].nick)
-//		indexTous.eq(i).attr("src",json.indexLi[i].touImg);
-//		indexNicks.eq(i).html(json.indexLi[i].nick);
+	for (var i=0;i<indexTous.length;i++) {
+		indexTous.eq(i).attr("src",json.indexLi1[i].touImg);
+		indexNicks.eq(i).html(json.indexLi1[i].nick);
+		indexCons.eq(i).html(json.indexLi1[i].content);
+		indexImgs.eq(i).attr("src",json.indexLi1[i].photo);
 	}
-	
-	
-	
-	
-	
+	var indexTou=$("#tieList2 li div[class=tieListTop] img");
+	var indexNick=$("#tieList2 li div[class=tieListTop] p[class=nick]");
+	var indexCon=$("#tieList2 li p[class=tieListMsg]");
+	var indexImg=$("#tieList2 li div[class=tieListMain] img");
+	$.each(json, function(k,v) {
+		for(var i=0;i<6;i++){
+			indexTou.eq(i).attr("src",json.indexLi2[i].touImg);
+			indexNick.eq(i).html(json.indexLi2[i].nick);
+			indexCon.eq(i).html(json.indexLi2[i].content);
+			indexImg.eq(i).attr("src",json.indexLi2[i].photo);
+		}
+	});
 	
 //	var n = 0;
 	var indexHeaderNavs = $("#indexHeader a");
