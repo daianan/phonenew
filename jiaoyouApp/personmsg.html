@@ -10,6 +10,7 @@
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/zepto.js"></script>
 		<script type="text/javascript" src="js/touch.js"></script>
+		<script type="text/javascript" src="js/json.js" ></script>
 		<script type="text/javascript">
 			document.documentElement.style.fontSize = innerWidth / 15 + "px";
 		</script>
@@ -22,7 +23,7 @@
 				<p>个人信息</p>
 			</div>
 			<div class="personTou">
-				<img src="img/tou1.jpg" />
+				<img src="img/tou1.jpg" id="userLogo" />
 				<p>点击修改头像</p>
 			</div>
 		</header>
@@ -31,24 +32,24 @@
 				<ul>
 					<li>
 						<label>昵称</label>
-						<input type="text" value="为我以为" />
+						<input type="text" id="perName" />
 					</li>
 					<li>
 						<label>性别</label>
 						<span>
-							<input type="radio" name="sex" />
+							<input type="radio" name="sex" id="man" />
 							<b>男</b>
-							<input type="radio" name="sex" checked />
+							<input type="radio" name="sex" id="woman" />
 							<b>女</b>
 						</span>
 					</li>
 					<li>
 						<label>生日</label>
-						<input type="data" value="1996-03-09" />
+						<input type="data" id="birthday" />
 					</li>
 					<li>
 						<label>个人签名</label>
-						<p>吃鸡吃鸡吃鸡</p>
+						<p id="qian"></p>
 					</li>
 				</ul>
 			</div>
@@ -59,6 +60,25 @@
 			$("#personHis").on("tap", function() {
 				history.back();
 			});
+			if(window.location.search.substr(10)!=''){
+				var user=window.location.search.substr(10);
+				$("#perName").val(user);
+				for (var i=0;i<json.users.length;i++) {
+					var arr=[];
+					arr.push(json.users[i].nick);
+					if(arr.indexOf(user)!=-1){
+						$("#birthday").val(json.users[arr.indexOf(user)].birthday);
+						$("#qian").html(json.users[arr.indexOf(user)].autograph);
+						$("#userLogo").attr("src",json.users[arr.indexOf(user)].logo);
+						if (json.users[arr.indexOf(user)].sex=='男') {
+							$("#man").attr('checked','checked');
+						}else{
+							$("#woman").attr('checked','checked');
+						}
+						console.log(json.users[arr.indexOf(user)].sex)
+					}
+				}
+			}
 		});
 	</script>
 

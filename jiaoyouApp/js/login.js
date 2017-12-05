@@ -13,20 +13,22 @@ $(function() {
 		loginBtns.eq(1).css("display", "block");
 		$("#regBack").css("display", "block");
 		$("#loginBack").css("display", "none");
-	});	
-	var usern = $("#username").val();
-	$("#username").on("input", function() {
-		var usern = $("#username").val();
-		$.ajax({
-			type: "post",
-			url: "php/login.php",
-			data:{
-				us:usern
-			},
-			success: function(data) {
-				console.log(data)
-			}
-		});
 	});
 
+	$("#password").on('input', function() {
+		if($("#username").val() != '' && $("#password").val() != '') {
+			$("#userLogin").css('background', '#149eff');
+		}
+	});
+
+	$("#userLogin").on("click", function() {
+		var usern = $("#username").val();
+		var pwd = $("#password").val();
+		if(usern == "admin" && pwd == '123456') {
+			$("#userLogin").attr("href","wo.html?username="+usern);
+		}else{
+			alert("用户名或密码错误，请重新输入");
+			return;
+		}
+	});
 });

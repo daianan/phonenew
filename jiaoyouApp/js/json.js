@@ -60,5 +60,12 @@ var json={
 		'nick':'Promise丶陌影',
 		content:'请记住我叫叶良辰！机智脸~~~',
 		photo:"img/shipin6.jpg"
+	}],
+	users:[{
+		nick:'admin',
+		sex:'男',
+		birthday:'1996-03-09',
+		autograph:'吃鸡吃鸡吃鸡',
+		logo:"img/tou4.jpg"
 	}]
 }

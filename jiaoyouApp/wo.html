@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/wo.css" />
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/json.js" ></script>
 		<script type="text/javascript">
 			document.documentElement.style.fontSize = innerWidth / 15 + "px";
 		</script>
@@ -20,13 +21,13 @@
 				<p class="woHeaderBg"></p>
 				<div class="woMsg">
 					<div class="woTouX">
-						<a href="login.html"><span class="woTou"></span></a>
+						<a href="login.html"><img src="img/tou1.jpg" class="woTou" id="woTou" /></a>
 					</div>
 					<div>
-						<h5>未登录</h5>
-						<a href="login.html" class="jian"></a>
+						<h5 id="nick">未登录</h5>
+						<a href="login.html" class="jian" id="aLink"></a>
 					</div>
-					<p>点击头像登录</p>
+					<p id="autograph">点击头像登录</p>
 				</div>
 			</div>
 		</div>
@@ -114,7 +115,20 @@
 			for(var i=0;i<woIcons.length;i++){
 				woIcons.eq(i).attr("src","icon/woIcon0"+(i+1)+"_03.png")
 			}
+			if(window.location.search.substr(10)!=''){
+				var user=window.location.search.substr(10);
+				$("#nick").html(user);
+				$("#aLink").attr('href','personmsg.html?username='+user);
+				$("#woTou").parent().attr('href','personmsg.html?username='+user);
+				for (var i=0;i<json.users.length;i++) {
+					var arr=[];
+					arr.push(json.users[i].nick);
+					if(arr.indexOf(user)!=-1){
+						$("#autograph").html(json.users[arr.indexOf(user)].autograph);
+						$("#woTou").attr("src",json.users[arr.indexOf(user)].logo);
+					}
+				}
+			}
 		});
 	</script>
-
 </html>
