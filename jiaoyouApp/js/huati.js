@@ -16,6 +16,7 @@ $(function() {
 	huatiNavs.on("tap",function(){
 		$(this).addClass("sel").siblings('a').removeClass('sel');
 		$("#slider").animate({"left":$(this).width()*$(this).index()+$(this).width()/2-$("#slider").width()/2},100);
+		$("#huatiSel ul").eq($(this).index()).fadeIn().siblings("ul").fadeOut();
 	});
 	
 	//左滑、右滑
