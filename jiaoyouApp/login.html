@@ -10,6 +10,7 @@
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/zepto.js"></script>
 		<script type="text/javascript" src="js/touch.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
 		<script type="text/javascript">
 			document.documentElement.style.fontSize = innerWidth / 15 + "px";
 		</script>
@@ -24,33 +25,14 @@
 		</div>
 		<div class="loginMain">
 			<div class="loginUser">
-				<input type="text" placeholder="请输入用户名" />
+				<input type="text" placeholder="请输入用户名" id="username" />
 			</div>
 			<div class="loginPwd">
-				<input type="password" placeholder="请输入密码" />
+				<input type="password" placeholder="请输入密码" id="password" />
 			</div>
 			<a href="#">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
 			<a href="#">注&nbsp;&nbsp;&nbsp;&nbsp;册</a>
 		</div>
 	</body>
-	<script type="text/javascript">
-		$(function() {
-			$("#regBack").css("display", "none");
-			$("#loginBack").css("display", "block");
-			$("#loginBack").on("tap", function() {
-				history.back();
-			});
-			var loginBtns = $(".loginMain a");
-			loginBtns.eq(1).css("display", "none");
-			$("#loginReg").on("tap", function() {
-				$(".loginTxt").html("注册");
-				$(this).hide();
-				loginBtns.eq(0).css("display", "none");
-				loginBtns.eq(1).css("display", "block");
-				$("#regBack").css("display", "block");
-				$("#loginBack").css("display", "none");
-			});
-		});
-	</script>
 
 </html>

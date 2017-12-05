@@ -2,7 +2,6 @@ $(function() {
 	var footerNavs = $("#footerNav li a");
 	var footerIcon = $("#footerNav li a span img");
 	footerNavs.eq(0).addClass('footerNavSel').siblings('li').removeClass('footerNavSel');
-	console.log(footerIcon)
 	footerIcon.eq(0).attr("src", "icon/icon17_03.png");
 
 	//删除动态
@@ -43,12 +42,12 @@ $(function() {
 		}
 	});
 
-	//	var n = 0;
+	//选项卡切换
 	var indexHeaderNavs = $("#indexHeader a");
 	$("#indexSection ul").eq(0).fadeIn().siblings("ul").fadeOut();
 	indexHeaderNavs.on("tap", function() {
-		$("#indexSection ul").eq(($(this).index() - 1)).fadeIn().siblings("ul").fadeOut();
-		indexHeaderNavs.eq(($(this).index() - 1)).addClass("headerSel").siblings("a").removeClass("headerSel");
+		$("#indexSection ul").eq($(this).index() - 1).fadeIn().siblings("ul").fadeOut();
+		indexHeaderNavs.eq($(this).index()).addClass("headerSel").siblings("a").removeClass("headerSel");
 	});
 
 	//给div#indexSection设高
@@ -59,11 +58,12 @@ $(function() {
 	});*/
 
 	//左滑、右滑
-	//	var indexSection = document.getElementById("indexSection");
+//	var n = 0;
+//	var indexSection = document.getElementById("indexSection");
 	/*indexSection.addEventListener("touchstart", function(e) {
 		e.preventDefault();
 	});*/
-	/*	var startPosition, endPosition, moveX, moveY;
+	/*var startPosition, endPosition, moveX, moveY;
 		$(document).on('touchstart', function(e) {
 			var touch = e.touches[0];
 			startPosition = {

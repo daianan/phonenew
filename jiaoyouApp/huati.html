@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" href="css/public.css" />
-		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
-		<script type="text/javascript" src="js/zepto.js" ></script>
+		<link rel="stylesheet" href="css/huati.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/swiper.js" ></script>
+		<script type="text/javascript" src="js/touch.js" ></script>
+		<script type="text/javascript" src="js/huati.js" ></script>
 		<script type="text/javascript">
 			document.documentElement.style.fontSize = innerWidth / 15 + "px";
 		</script>
 	</head>
+
 	<body>
+		<header>
+			<input type="text" placeholder="搜索话题/帖子/用户" class="searchTxt" id="searchTxt" />
+			<i class="searchLogo"></i>
+			<span class="searchClose" id="huatiAdd">+</span>
+		</header>
+		<nav id="huatiNav">
+			<a href="#">关注</a>
+			<a href="#">情感</a>
+			<a href="#">搞笑</a>
+			<a href="#">娱乐</a>
+			<span id="slider"></span>
+		</nav>
+		<div class="huatiSel" id="huatiSel">
+			<ul>
+				<li><a href="#">搞笑图片</a><span>99+</span></li>
+				<li><a href="#">王者荣耀</a><span>99+</span></li>
+				<li><a href="#">绝地求生</a><span>99+</span></li>
+				<li><a href="#">搞笑段子</a><span>99+</span></li>
+			</ul>
+			<ul>
+				<li><a href="#">情话书签</a><span>+关注</span></li>
+				<li><a href="#">一个人很好</a><span>+关注</span></li>
+				<li><a href="#">单身狗聚集地</a><span>+关注</span></li>
+				<li><a href="#">撩妹技巧</a><span>+关注</span></li>
+			</ul>
+			<ul>
+				<li><a href="#">说多了都是泪</a><span>+关注</span></li>
+				<li><a href="#">毁童年</a><span>+关注</span></li>
+				<li><a href="#">这个视频有毒</a><span>+关注</span></li>
+				<li><a href="#">一起来当小逗比</a><span>+关注</span></li>
+			</ul>
+			<ul>
+				<li><a href="#">八卦来了</a><span>+关注</span></li>
+				<li><a href="#">那些年追过的电影</a><span>+关注</span></li>
+				<li><a href="#">让你印象深刻的电视剧台词</a><span>+关注</span></li>
+				<li><a href="#">韩剧迷</a><span>+关注</span></li>
+			</ul>
+		</div>
 		<footer>
 			<ul class="footerNav" id="footerNav">
 				<li>
@@ -36,14 +80,6 @@
 				</li>
 			</ul>
 		</footer>
-		<script type="text/javascript">
-			$(function() {
-				var footerNavs = $("#footerNav li a");
-			var footerIcon = $("#footerNav li a span img");
-			footerNavs.eq(1).addClass('footerNavSel').siblings('li').removeClass('footerNavSel');
-			console.log(footerIcon)
-			footerIcon.eq(1).attr("src","icon/icon21_03.png");
-			});
-		</script>
 	</body>
+
 </html>

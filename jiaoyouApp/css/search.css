@@ -1,14 +1,14 @@
 html, html body { height: 100%; width: 100%; }
 html body { position: relative; }
 html body header { padding: 0.16rem 0.8rem; box-sizing: border-box; position: relative; }
-html body header input.searchTxt { width: 17.2rem; height: 100%; outline: none; border: none; border: 1px solid #fff; background: #eee; border-radius: 0.84rem; padding: 0.08rem 0.16rem 0.08rem 2.16rem; float: left; }
-html body header i.searchLogo { display: block; width: 1.2rem; height: 1.2rem; position: absolute; top: 6px; left: 24px; z-index: 4; background: url(../icon/icon5_03.png) no-repeat 0px 0px; background-size: 1.2rem 1.2rem; }
+html body header input.searchTxt { width: 9.2rem; height: 1.2rem; outline: none; border: none; border: 1px solid #fff; background: #eee; border-radius: 0.84rem; padding: 0.08rem 0.16rem 0.08rem 2rem; float: left; }
+html body header i.searchLogo { display: block; width: 1.04rem; height: 1.04rem; position: absolute; top: 10px; left: 34px; z-index: 4; background: url(../icon/icon5_03.png) no-repeat 0px 0px; background-size: 1.04rem 1.04rem; }
 html body header span.searchClose { float: right; background: #eee; display: block; width: 1.2rem; height: 1.2rem; line-height: 1.2rem; border-radius: 50%; font-size: 20px; color: #888; }
-html body section.searchMain { margin-top: -0.2rem; padding-top: 1.2rem; padding-bottom: 0; background: #fff; }
-html body section.searchMain nav { width: 100%; position: relative; }
+html body section.searchMain { margin-top: -0.2rem; padding-top: 1.2rem; height: 1.4rem; box-sizing: content-box; padding-bottom: 0; background: #fff; }
+html body section.searchMain nav { width: 100%; position: relative; height: 100%; }
 html body section.searchMain nav a { display: block; float: left; width: 33.33%; color: #000; font-size: 16px; background: #fff; font-weight: bold; padding-bottom: 0.56rem; }
-html body section.searchMain nav a.col { color: #149eff; }
-html body section.searchMain nav span { width: 0.56rem; height: 0.16rem; display: inline-block; background: #149eff; position: absolute; top: 1.68rem; left: 0; border-radius: 0.08rem; }
+html body section.searchMain nav .sel { color: #149eff; }
+html body section.searchMain nav span { width: 0.56rem; height: 0.16rem; display: inline-block; background: #149eff; position: absolute; top: 1.24rem; left: 0; border-radius: 0.08rem; }
 html body p { background: #fafafa; font-size: 12px; position: absolute; top: 50%; left: 50%; margin: -8px 0 0 -24px; }
 
 /*# sourceMappingURL=search.css.map */

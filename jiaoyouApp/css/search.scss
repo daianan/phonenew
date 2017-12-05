@@ -10,26 +10,26 @@ html {
             box-sizing: border-box;
             position: relative;
             input.searchTxt {
-                width: 430/$sc+rem;
-                height: 100%;
+                width: 230/$sc+rem;
+                height: 30/$sc+rem;
                 outline: none;
                 border: none;
                 border: 1px solid #fff;
                 background: #eee;
                 border-radius: 21/$sc+rem;
-                padding: 2/$sc+rem 4/$sc+rem 2/$sc+rem 54/$sc+rem;
+                padding: 2/$sc+rem 4/$sc+rem 2/$sc+rem 50/$sc+rem;
                 float: left;
             }
             i.searchLogo {
                 display: block;
-                width: 30/$sc+rem;
-                height: 30/$sc+rem;
+                width: 26/$sc+rem;
+                height: 26/$sc+rem;
                 position: absolute;
-                top: 6px;
-                left: 24px;
+                top: 10px;
+                left: 34px;
                 z-index: 4;
                 background: url(../icon/icon5_03.png) no-repeat 0px 0px;
-                background-size: 30/$sc+rem 30/$sc+rem;
+                background-size: 26/$sc+rem 26/$sc+rem;
             }
             span.searchClose {
                 float: right;
@@ -46,11 +46,14 @@ html {
         section.searchMain {
             margin-top: -5/$sc+rem;
             padding-top: 30/$sc+rem;
+            height: 35/$sc+rem;
+            box-sizing: content-box;
             padding-bottom: 0;
             background: #fff;
             nav {
                 width: 100%;
                 position: relative;
+                height: 100%;
                 a {
                     display: block;
                     float: left;
@@ -61,7 +64,7 @@ html {
                     font-weight: bold;
                     padding-bottom: 14/$sc+rem;
                 }
-                a.col{
+                .sel {
                     color: #149eff;
                 }
                 span {
@@ -70,7 +73,7 @@ html {
                     display: inline-block;
                     background: #149eff;
                     position: absolute;
-                    top: 42/$sc+rem;
+                    top: 31/$sc+rem;
                     left: 0;
                     border-radius: 2/$sc+rem;
                 }
