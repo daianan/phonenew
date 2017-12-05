@@ -2,15 +2,16 @@ $sc:25;
 html{
     body{
         background: #fff;
+        position: relative;
         div.xiaoxiHeader{
             width: 100%;
             height: 42/$sc+rem;
-            padding: 0 60/$sc+rem;
+            padding: 6/$sc+rem 60/$sc+rem;
             box-sizing: border-box;
             a{
                 font-size: 16px;
                 height: 100%;
-                line-height: 42/$sc+rem;
+                line-height: 30/$sc+rem;
                 color: #333;
                 display: inline-block;
                 width: 50%;
@@ -26,10 +27,19 @@ html{
                 display: inline-block;
                 background: #149eff;
                 position: absolute;
-                top: 38/$sc+rem;
+                top: 44/$sc+rem;
                 left: 0;
                 border-radius: 2/$sc+rem;
             }
+        }
+        div.xiaoxiEmpty,div.sixinEmpty{
+            font-size: 14px;
+            width: 100%;
+            height: 20/$sc+rem;
+            line-height: 20/$sc+rem;
+            position: absolute;
+            left: 0;
+            top: 45%;
         }
     }
 }

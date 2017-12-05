@@ -1,7 +1,8 @@
-html body { background: #fff; }
-html body div.xiaoxiHeader { width: 100%; height: 1.68rem; padding: 0 2.4rem; box-sizing: border-box; }
-html body div.xiaoxiHeader a { font-size: 16px; height: 100%; line-height: 1.68rem; color: #333; display: inline-block; width: 50%; float: left; font-weight: bold; }
+html body { background: #fff; position: relative; }
+html body div.xiaoxiHeader { width: 100%; height: 1.68rem; padding: 0.24rem 2.4rem; box-sizing: border-box; }
+html body div.xiaoxiHeader a { font-size: 16px; height: 100%; line-height: 1.2rem; color: #333; display: inline-block; width: 50%; float: left; font-weight: bold; }
 html body div.xiaoxiHeader .sel { color: #149eff; }
-html body div.xiaoxiHeader span { width: 0.48rem; height: 0.16rem; display: inline-block; background: #149eff; position: absolute; top: 1.52rem; left: 0; border-radius: 0.08rem; }
+html body div.xiaoxiHeader span { width: 0.48rem; height: 0.16rem; display: inline-block; background: #149eff; position: absolute; top: 1.76rem; left: 0; border-radius: 0.08rem; }
+html body div.xiaoxiEmpty, html body div.sixinEmpty { font-size: 14px; width: 100%; height: 0.8rem; line-height: 0.8rem; position: absolute; left: 0; top: 45%; }
 
 /*# sourceMappingURL=xiaoxi.css.map */

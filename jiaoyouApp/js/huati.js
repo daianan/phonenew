@@ -36,10 +36,10 @@ $(function() {
 	});
 	$(document).on("swipeRight",function(){
 		n--;
-		$("#huatiSel ul").eq(n).fadeIn().siblings("ul").fadeOut();
 		if (n<=0) {
 			n=0;
 		}
+		$("#huatiSel ul").eq(n).fadeIn().siblings("ul").fadeOut();
 		huatiNavs.eq(n).addClass("sel").siblings('a').removeClass('sel');
 		$("#slider").animate({"left":huatiNavs.eq(n).width()*n+huatiNavs.eq(n).width()/2-$("#slider").width()/2},100);
 	});

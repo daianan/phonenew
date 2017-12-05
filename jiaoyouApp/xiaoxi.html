@@ -20,6 +20,8 @@
 			<a href="#">私信</a>
 			<span id="slid"></span>
 		</div>
+		<div class="xiaoxiEmpty">还没有消息提醒噢~</div>
+		<div class="sixinEmpty">其实你可以主动点~~</div>
 		<footer>
 			<ul class="footerNav" id="footerNav">
 				<li>
@@ -50,8 +52,24 @@
 				var footerIcon = $("#footerNav li a span img");
 				footerNavs.eq(2).addClass('footerNavSel').siblings('li').removeClass('footerNavSel');
 				footerIcon.eq(2).attr("src", "icon/icon19_03.png");
+				$("#slid").css("left",$("#slid").parent().width()/2-$("#slid").width());
 				var xiaoxiNavs=$(".xiaoxiHeader a");
-				
+				xiaoxiNavs.eq(0).addClass("sel").siblings("a").removeClass("sel");
+				$(".xiaoxiEmpty").fadeIn();
+				$(".sixinEmpty").fadeOut();
+				xiaoxiNavs.on("click",function(){
+					$(this).addClass("sel").siblings("a").removeClass("sel");
+					if ($(this).index()==0) {
+						$("#slid").animate({"left":$("#slid").parent().width()/2-$("#slid").width()/2},100);
+						$(".xiaoxiEmpty").fadeIn();
+						$(".sixinEmpty").fadeOut();
+					}
+					if ($(this).index()==1) {
+						$("#slid").animate({"left":$("#slid").parent().width()/2+$(this).width()-$("#slid").width()/2},100);
+						$(".xiaoxiEmpty").fadeOut();
+						$(".sixinEmpty").fadeIn();
+					}
+				});
 			});
 		</script>
 	</body>
