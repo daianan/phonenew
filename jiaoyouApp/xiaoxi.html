@@ -15,6 +15,11 @@
 	</head>
 
 	<body>
+		<div class="xiaoxiHeader">
+			<a href="#">提醒</a>
+			<a href="#">私信</a>
+			<span id="slid"></span>
+		</div>
 		<footer>
 			<ul class="footerNav" id="footerNav">
 				<li>
@@ -44,8 +49,9 @@
 				var footerNavs = $("#footerNav li a");
 				var footerIcon = $("#footerNav li a span img");
 				footerNavs.eq(2).addClass('footerNavSel').siblings('li').removeClass('footerNavSel');
-				console.log(footerIcon)
 				footerIcon.eq(2).attr("src", "icon/icon19_03.png");
+				var xiaoxiNavs=$(".xiaoxiHeader a");
+				
 			});
 		</script>
 	</body>
