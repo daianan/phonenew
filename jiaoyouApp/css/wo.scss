@@ -27,6 +27,7 @@ html {
                     position: absolute;
                     top: 30/$sc+rem;
                     left: 0;
+                    box-sizing: border-box;
                     padding-left: 25/$sc+rem;
                     div.woTouX {
                         width: 100%;
