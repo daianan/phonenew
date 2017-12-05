@@ -50,7 +50,7 @@ html {
             padding-top: 20/$sc+rem;
             padding-bottom: 10/$sc+rem;
             position: absolute;
-            top: 42/$sc+rem;
+            top: 43/$sc+rem;
             left: 0;
             a {
                 flex: 1;
@@ -58,6 +58,9 @@ html {
                 font-size: 14px;
                 color: #333;
                 font-weight: bold;
+            }
+            .sel {
+                color: #149eff;
             }
             span {
                 width: 12/$sc+rem;
@@ -95,10 +98,7 @@ html {
                         font-weight: bold;
                         letter-spacing: 0.5px;
                     }
-                    a.sel {
-                        color: #149eff;
-                    }
-                    span{
+                    span {
                         float: right;
                         display: inline-block;
                         width: 50/$sc+rem;

@@ -3,14 +3,14 @@ html body header { padding: 0.16rem 0.8rem; box-sizing: border-box; position: re
 html body header input.searchTxt { width: 9.2rem; height: 1.2rem; outline: none; border: none; border: 1px solid #fff; background: #eee; border-radius: 0.84rem; padding: 0.08rem 0.16rem 0.08rem 2rem; float: left; }
 html body header i.searchLogo { display: block; width: 1.04rem; height: 1.04rem; position: absolute; top: 10px; left: 34px; z-index: 4; background: url(../icon/icon5_03.png) no-repeat 0px 0px; background-size: 1.04rem 1.04rem; }
 html body header span.searchClose { float: right; background: #eee; display: block; width: 1.2rem; height: 1.2rem; line-height: 1.2rem; border-radius: 50%; font-size: 20px; color: #888; }
-html body nav { width: 100%; height: 0.96rem; display: flex; background: #fff; padding-top: 0.8rem; padding-bottom: 0.4rem; position: absolute; top: 1.68rem; left: 0; }
+html body nav { width: 100%; height: 0.96rem; display: flex; background: #fff; padding-top: 0.8rem; padding-bottom: 0.4rem; position: absolute; top: 1.72rem; left: 0; }
 html body nav a { flex: 1; line-height: 0.96rem; font-size: 14px; color: #333; font-weight: bold; }
+html body nav .sel { color: #149eff; }
 html body nav span { width: 0.48rem; height: 0.16rem; display: inline-block; background: #149eff; position: absolute; top: 2rem; left: 0; border-radius: 0.08rem; }
 html body div.huatiSel { width: 100%; height: 8rem; margin-top: 2.16rem; position: relative; }
 html body div.huatiSel ul { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
 html body div.huatiSel ul li { width: 100%; height: 2rem; font-size: 14px; padding: 0.24rem 0.8rem; box-sizing: border-box; }
 html body div.huatiSel ul li a { color: #333; height: 100%; line-height: 1.52rem; float: left; font-weight: bold; letter-spacing: 0.5px; }
-html body div.huatiSel ul li a.sel { color: #149eff; }
 html body div.huatiSel ul li span { float: right; display: inline-block; width: 2rem; border-radius: 0.4rem; height: 0.8rem; line-height: 0.8rem; background: #e74b5d; color: #fff; margin-top: 0.36rem; }
 
 /*# sourceMappingURL=huati.css.map */
