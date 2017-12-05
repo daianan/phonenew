@@ -4,8 +4,8 @@ html body div.woHeader div.woHeader { width: 100%; height: 100%; position: relat
 html body div.woHeader div.woHeader p.woHeaderBg { width: 100%; height: 100%; background: url(../img/bg1.jpg) no-repeat 0px 0px; background-size: 15rem auto; }
 html body div.woHeader div.woHeader div.woMsg { width: 100%; height: 4.4rem; position: absolute; top: 1.2rem; left: 0; padding-left: 1rem; }
 html body div.woHeader div.woHeader div.woMsg div.woTouX { width: 100%; height: 2.8rem; }
-html body div.woHeader div.woHeader div.woMsg div.woTouX a { width: 2.8rem; height: 100%; margin-left: 0; }
-html body div.woHeader div.woHeader div.woMsg div.woTouX a span.woTou { width: 100%; height: 100%; border-radius: 50%; background: url(../img/tou1.jpg) no-repeat 0px 0px; background-size: 2.8rem 2.8rem; z-index: 4; margin: 0; }
+html body div.woHeader div.woHeader div.woMsg div.woTouX a { display: block; width: 2.8rem; height: 100%; margin-left: 0; }
+html body div.woHeader div.woHeader div.woMsg div.woTouX a span.woTou { display: block; width: 100%; height: 100%; border-radius: 50%; background: url(../img/tou1.jpg) no-repeat 0px 0px; background-size: 2.8rem 2.8rem; z-index: 4; margin: 0; }
 html body div.woHeader div.woHeader div.woMsg div { width: 100%; height: 1.2rem; margin-top: 0.24rem; }
 html body div.woHeader div.woHeader div.woMsg div h5 { display: inline-block; letter-spacing: 1px; text-align: left; float: left; height: 100%; line-height: 1.2rem; }
 html body div.woHeader div.woHeader div.woMsg div a.jian { border-color: #fff; float: right; transform: rotate(45deg); }
