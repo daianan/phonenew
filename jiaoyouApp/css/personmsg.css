@@ -1,12 +1,12 @@
 html { overflow: hidden; }
-html body header { width: 100%; height: 8.8rem; }
-html body header div.personTitle { width: 100%; height: 1.2rem; padding-left: 0.56rem; position: relative; }
-html body header div.personTitle span { float: left; transform: rotate(-135deg); }
-html body header div.personTitle P { position: absolute; top: 0; left: 50%; margin-left: -38px; height: 100%; line-height: 1.2rem; font-size: 16px; font-weight: bold; letter-spacing: 3px; }
-html body header div.personTou { height: 4.8rem; width: 3.04rem; margin: 2.16rem auto 0; }
-html body header div.personTou img { width: 2.8rem; height: 2.8rem; border-radius: 50%; }
-html body header div.personTou p { font-size: 12px; margin-top: 0.64rem; }
-html body section { padding-bottom: 0; margin-top: 9.2rem; padding: 0.48rem 0.8rem; background: #fff; }
+html body div.msgNeader { width: 100%; height: 8.8rem; box-sizing: border-box; width: 100%; padding: 0.08rem 0.64rem; background: #fff; z-index: 3; margin-bottom: 0.16rem; }
+html body div.msgNeader div.personTitle { width: 100%; height: 1.2rem; padding-left: 0.56rem; position: relative; }
+html body div.msgNeader div.personTitle span { float: left; transform: rotate(-135deg); }
+html body div.msgNeader div.personTitle P { position: absolute; top: 0; left: 50%; margin-left: -38px; height: 100%; line-height: 1.2rem; font-size: 16px; font-weight: bold; letter-spacing: 3px; }
+html body div.msgNeader div.personTou { height: 4.8rem; width: 3.04rem; margin: 2.16rem auto 0; }
+html body div.msgNeader div.personTou img { width: 2.8rem; height: 2.8rem; border-radius: 50%; }
+html body div.msgNeader div.personTou p { font-size: 12px; margin-top: 0.64rem; }
+html body section { padding-bottom: 0; margin-top: 0.4rem; padding: 0.48rem 0.8rem; background: #fff; }
 html body section div.personMain { overflow: hidden; }
 html body section div.personMain ul li { width: 100%; height: 1.2rem; line-height: 1.2rem; font-size: 14px; color: #888; }
 html body section div.personMain ul li label { width: 3.6rem; height: 100%; float: left; text-align: left; color: #333; letter-spacing: 2px; }
