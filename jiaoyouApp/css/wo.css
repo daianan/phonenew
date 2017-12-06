@@ -20,7 +20,7 @@ html body section div.woMain ul { width: 100%; height: 8rem; margin-top: 0.4rem;
 html body section div.woMain ul li { width: 100%; height: 2rem; padding: 0.4rem 0.8rem; box-sizing: border-box; border-bottom: 1px solid #f3f3f3; }
 html body section div.woMain ul li i { display: inline-block; width: 1.2rem; height: 1.2rem; float: left; }
 html body section div.woMain ul li i img { width: 100%; height: 100%; }
-html body section div.woMain ul li span.woTxt { font-size: 14px; font-weight: bold; letter-spacing: 1px; float: left; margin-left: 0.48rem; width: 2.4rem; height: 1.2rem; line-height: 1.2rem; }
+html body section div.woMain ul li span.woTxt { font-size: 14px; font-weight: bold; float: left; margin-left: 0.8rem; width: 4.8rem; height: 1.2rem; line-height: 1.2rem; text-align: left; }
 html body section div.woMain ul li b { display: inline-block; width: 0.56rem; height: 1.2rem; line-height: 1.2rem; font-size: 14px; font-weight: normal; float: right; margin-right: 0.12rem; }
 html body section div.woMain ul li span.woNext { width: 0.24rem; height: 0.24rem; border-width: 2px 2px 0 0; transform: rotate(45deg); float: right; margin-right: 0; margin-top: 0.44rem; }
 
