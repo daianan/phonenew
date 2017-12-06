@@ -38,8 +38,6 @@ $(function() {
 		var reg2=/^\w{6,17}$/;
 		var usern = $("#username").val();
 		var pwd = $("#password").val();
-		console.log(reg1.test(usern));
-		console.log(reg2.test(pwd));
 		if (reg1.test(usern)&&reg2.test(pwd)) {
 			alert('注册成功!');
 		}else if(reg1.test(usern)===false&&reg2.test(pwd)){
