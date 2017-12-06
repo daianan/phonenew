@@ -13,6 +13,8 @@ $(function() {
 		loginBtns.eq(1).css("display", "block");
 		$("#regBack").css("display", "block");
 		$("#loginBack").css("display", "none");
+		$("#username").attr("placeholder","请输入6-15位字母、数字，以字母开头");
+		$("#password").attr("placeholder","请输入6-18位包含字母、数字和下划线");
 	});
 
 	$("#password").on('input', function() {
@@ -29,6 +31,23 @@ $(function() {
 		}else{
 			alert("用户名或密码错误，请重新输入");
 			return;
+		}
+	});
+	$("#userReg").on("click",function(){
+		var reg1=/^[a-zA-Z]{1}[a-zA-z0-9]{5,14}$/;
+		var reg2=/^\w{6,17}$/;
+		var usern = $("#username").val();
+		var pwd = $("#password").val();
+		console.log(reg1.test(usern));
+		console.log(reg2.test(pwd));
+		if (reg1.test(usern)&&reg2.test(pwd)) {
+			alert('注册成功!');
+		}else if(reg1.test(usern)===false&&reg2.test(pwd)){
+			alert('用户名错误，请重新输入');
+		}else if (reg1.test(usern)&&reg2.test(pwd)===false) {
+			alert('密码错误，请重新输入');
+		}else if (usern===''||pwd==='') {
+			alert('输入内容不能为空');
 		}
 	});
 });
