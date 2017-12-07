@@ -9,7 +9,10 @@ html {
             a {
                 width: 10%;
                 &:nth-of-type(2){
-                    margin-left: 34/$sc+rem;
+                    margin-left: 16/$sc+rem;
+                }
+                &:nth-of-type(3){
+                    margin-right: 16/$sc+rem;
                 }
                 &:nth-of-type(2),&:nth-of-type(3){
                     width: 35%;

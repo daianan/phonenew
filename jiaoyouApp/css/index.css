@@ -1,7 +1,8 @@
 html, html body { height: 100%; width: 100%; }
 html body header { height: 100%; }
 html body header a { width: 10%; }
-html body header a:nth-of-type(2) { margin-left: 1.36rem; }
+html body header a:nth-of-type(2) { margin-left: 0.64rem; }
+html body header a:nth-of-type(3) { margin-right: 0.64rem; }
 html body header a:nth-of-type(2), html body header a:nth-of-type(3) { width: 35%; }
 html body header span.edit { float: right; background: url(../icon/icon4_03.png) no-repeat -1px 0px; background-size: 1.2rem 1.04rem; }
 html body section.indexSection { height: auto; }
