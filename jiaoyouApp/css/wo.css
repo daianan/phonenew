@@ -1,5 +1,5 @@
 html { overflow: hidden; }
-html body div.woHeader { width: 100%; height: 7.2rem; padding: 0; box-sizing: border-box; width: 100%; background: #fff; z-index: 3; margin-bottom: 0.16rem; }
+html body div.woHeader { width: 100%; height: 7.2rem; padding: 0; box-sizing: border-box; width: 100%; background: #fff; z-index: 3; }
 html body div.woHeader div.woHeader { width: 100%; height: 100%; position: relative; }
 html body div.woHeader div.woHeader p.woHeaderBg { width: 100%; height: 100%; background: url(../img/bg1.jpg) no-repeat 0px 0px; background-size: 15rem auto; }
 html body div.woHeader div.woHeader div.woMsg { width: 100%; height: 4.4rem; position: absolute; top: 1.2rem; left: 0; box-sizing: border-box; padding-left: 1rem; }
